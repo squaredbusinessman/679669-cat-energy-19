@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгений Антропов](https://up.htmlacademy.ru/adaptive/19/user/679669).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Михайлов](https://htmlacademy.ru/profile/id327277).
 
 ---
 
