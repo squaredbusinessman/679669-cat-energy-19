@@ -1,0 +1,27 @@
+.page-header {
+  display: flex;
+  @include center-container;
+}
+
+.page-header__menu {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.page-header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active:focus {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo-image {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}

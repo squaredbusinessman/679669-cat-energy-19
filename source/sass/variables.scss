@@ -1,0 +1,33 @@
+/*Цвета*/
+$green: #68b738;
+$green--dark: #5eaa2f;
+$green--darkest: #64a83b;
+$rose--red: #ff8282;
+$black: #111111;
+$black--lighter: #222222;
+$gray--darkest: #444444;
+$gray--darker: #666666;
+$gray--dark: #cdcdcd;
+$gray: #d9d9d9;
+$gray--lighter: #eeeeee;
+$gray--lightest: #f2f2f2;
+$white: #ffffff;
+/*Цвета отдельных элементов и псевдоклассовых элементов*/
+$hover-black: rgba(17, 17, 17, 0.6);
+$down-black: rgba(17, 17, 17,0.3);
+$down-darkgray: rgba(68, 68, 68, 0.3);
+$down-gray: rgba(255, 255, 255, 0.3);
+$gray--progress-bar: #dcdcdc;
+$gray--form-border: #ededed;
+$green-background: #63a73a;
+/*Шрифты и цвета текста*/
+$default-font: "Oswald", "Arial", sans-serif;
+$phrase_description-font: "Arial", sans-serif;
+$title-clr: $black;
+$phrase-clr: $gray--darkest;
+$green_button_text: $white;
+$gray_button_text: $gray--darkest;
+$gift_block-text_clr: $white;
+$additional_goods--clr: $black--lighter;
+$promo_text-clr: $white;
+$border_gray--clr: $gray--lighter;

@@ -1,1 +1,41 @@
-body { background: red; }
+/*Шрифты*/
+@import "fonts.scss";
+/*Переменные*/
+@import "variables.scss";
+/*Миксины*/
+@import "mixin.scss";
+/*Глобальные стили*/
+@import "global_styles.scss";
+/*Общие блоки для всех страниц*/
+@import "blocks/common_blocks/button.scss";
+@import "blocks/common_blocks/visually_hidden.scss";
+@import "blocks/common_blocks/page_header.scss";
+@import "blocks/common_blocks/main_nav.scss";
+@import "blocks/common_blocks/site_list.scss";
+@import "blocks/common_blocks/dealer.scss";
+@import "blocks/common_blocks/map-background.scss";
+@import "blocks/common_blocks/map.scss";
+@import "blocks/common_blocks/page_footer.scss";
+@import "blocks/common_blocks/social.scss";
+@import "blocks/common_blocks/copyright.scss";
+/*Блоки Index*/
+@import "blocks/index_blocks/index_main.scss";
+@import "blocks/index_blocks/promo.scss";
+@import "blocks/index_blocks/advantages.scss";
+@import "blocks/index_blocks/instruction.scss";
+@import "blocks/index_blocks/living_example.scss";
+@import "blocks/index_blocks/result.scss";
+@import "blocks/index_blocks/compare.scss";
+/*Блоки Catalog*/
+@import "blocks/catalog_blocks/catalog_main.scss";
+@import "blocks/catalog_blocks/product.scss";
+@import "blocks/catalog_blocks/card.scss";
+@import "blocks/catalog_blocks/show_all.scss";
+@import "blocks/catalog_blocks/additional_goods.scss";
+@import "blocks/catalog_blocks/gift.scss";
+/*Блоки Form*/
+@import "blocks/form_blocks/form.scss";
+@import "blocks/form_blocks/form_question.scss";
+@import "blocks/form_blocks/form_owner.scss";
+@import "blocks/form_blocks/form_comment.scss";
+@import "blocks/form_blocks/form_addon.scss";

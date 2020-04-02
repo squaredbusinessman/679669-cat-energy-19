@@ -1,0 +1,13 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.copyright__link {
+  font-family: $phrase_description-font;
+  color: $phrase-clr;
+
+  @include font-styles(16px, normal, 16px, left);
+}

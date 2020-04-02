@@ -1,0 +1,67 @@
+.form-addon {
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+
+  border: none;
+}
+
+.form-addon__title {
+  margin-bottom: 39px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: -160px;
+
+    width: 136px;
+    height: 3px;
+
+    background-color: $green;
+  }
+}
+
+.form-addon__label {
+  margin-bottom: 24px;
+  margin-left: 46px;
+
+  cursor: pointer;
+
+  user-select: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -46px;
+
+    width: 29px;
+    height: 29px;
+
+    border: 1px solid $gray--form-border;
+  }
+}
+
+.form-addon__input {
+  display: none;
+
+  &:checked + .form-addon__label::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -41px;
+
+    width: 19px;
+    height: 11px;
+
+    border-bottom: 3px solid $green;
+    border-left: 3px solid $green;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+

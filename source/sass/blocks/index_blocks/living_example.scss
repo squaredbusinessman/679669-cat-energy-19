@@ -1,0 +1,52 @@
+.living-example {
+  width: 100%;
+
+  background-color: $gray--lightest;
+}
+
+.living-example__center {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+
+  @include center-container;
+}
+
+.living-example__title {
+  margin-top: 16px;
+  margin-bottom: 25px;
+  margin-left: 0;
+
+  font-family: $default-font;
+  color: $black;
+
+  @include center-container;
+  @include font-styles(36px, normal, 60px, left, none);
+}
+
+.living-example__phrase {
+  width: 99%;
+  margin-bottom: 29px;
+
+  font-family: $phrase_description-font;
+  color: $gray--darkest;
+
+  @include font-styles(14px, normal, 18px, left, none);
+}
+
+.living-example__result-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.living-example__result {
+  display: flex;
+}
+
+.living-example__compare {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 36px;
+}

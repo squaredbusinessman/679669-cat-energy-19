@@ -1,0 +1,36 @@
+.form-comment {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  border: none;
+}
+
+.form-comment__title {
+  margin-bottom: 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: -180px;
+
+    width: 158px;
+    height: 3px;
+
+    background-color: $green;
+  }
+}
+
+.form-comment__textarea {
+  width: 277px;
+  height: 135px;
+  padding-top: 12px;
+
+  color: $gray--darkest;
+
+  border: 1px solid $gray--form-border;
+
+  @include font-styles(16px, normal, 18px, center, uppercase);
+}
+

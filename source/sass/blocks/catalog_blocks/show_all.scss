@@ -1,0 +1,26 @@
+.show-all__title {
+  margin: 0 auto;
+  padding-top: 79px;
+
+  color: $title-clr;
+
+  @include font-styles(16px, normal, 20px, center, uppercase);
+}
+
+.show-all__phrase {
+  margin-top: 8px;
+  margin-bottom: 20px;
+
+  font-family: $phrase_description-font;
+  color: $phrase-clr;
+
+  @include font-styles(12px, normal, 16px, center, none);
+}
+
+.show-all__button {
+  width: 100%;
+  margin-bottom: 24px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+

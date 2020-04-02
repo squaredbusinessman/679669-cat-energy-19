@@ -1,0 +1,29 @@
+.gift {
+  min-height: 289px;
+  margin: 0 auto;
+
+  background-color: $green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+.gift__content {
+}
+
+.gift__icon {
+  width: 56px;
+  height: 61px;
+}
+
+.gift__phrase {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 185px;
+
+  font-family: $phrase_description-font;
+  color:$gift_block-text_clr;
+
+  @include font-styles(16px, normal, 20px, center, none);
+}

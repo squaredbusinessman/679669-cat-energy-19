@@ -1,0 +1,52 @@
+.form-question {
+  margin: 0 auto;
+  margin-top: 21px;
+  padding: 0 20px;
+
+  border: none;
+  &:last-child {
+    margin-bottom: 6px;
+  }
+}
+
+.form-question__label {
+  position: relative;
+
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 46px;
+
+  cursor: pointer;
+
+  user-select: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -46px;
+
+    width: 29px;
+    height: 29px;
+
+    border: 1px solid $gray--form-border;
+    border-radius: 50%;
+  }
+}
+
+.form-question__radio {
+  display: none;
+  &:checked + .form-question__label::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -36px;
+
+    width: 12px;
+    height: 12px;
+
+    background-color: $green;
+    border-radius: 50%;
+  }
+}

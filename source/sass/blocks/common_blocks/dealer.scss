@@ -1,0 +1,52 @@
+.dealer {
+  padding-top: 24px;
+  padding-bottom: 26px;
+}
+
+.dealer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.dealer__title {
+  width: 45%;
+  margin: 0;
+  margin-top: 6px;
+
+  color: $title-clr;
+
+  @include font-styles(16px, normal, 20px, left, uppercase);
+}
+
+.dealer__location {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  margin: 0;
+}
+
+.dealer__address {
+  margin: 0;
+
+  font-family: $phrase_description-font;
+  color: $phrase-clr;
+
+  @include font-styles(14px, normal, 20px, left, none);
+}
+
+.dealer__city {
+  margin: 0;
+
+  font-family: $phrase_description-font;
+  color: $phrase-clr;
+
+  @include font-styles(14px, normal, 20px, left, none);
+}
+
