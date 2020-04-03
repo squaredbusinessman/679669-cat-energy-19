@@ -1,0 +1,39 @@
+.button {
+  display: inline-block;
+  min-width: 220px;
+
+  vertical-align: middle;
+  color: $green_button_text;
+
+  background-color: $green;
+  border: none;
+
+  @include font-styles(14px, normal, 18px, center, uppercase);
+
+
+  &:hover {
+    background-color: $green--dark;
+  }
+
+  &:active:focus {
+    color: $down-gray;
+
+    background-color: $green--dark;
+  }
+}
+
+.button--gray {
+  color: $gray_button_text;
+
+  background-color: $gray--lightest;
+
+  &:hover {
+    background-color: $gray--lighter;
+  }
+
+  &:active:focus {
+    color: $down-darkgray;
+
+    background-color: $gray--lighter;
+  }
+}

@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: $default-font;
+
+  background-color: $white;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  margin: 0;
+  appearance: none;
+}

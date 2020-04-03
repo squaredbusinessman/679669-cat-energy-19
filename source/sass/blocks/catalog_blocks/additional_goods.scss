@@ -1,0 +1,76 @@
+.additional-goods {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 66px;
+  margin-bottom: 35px;
+}
+
+.additional-goods__title {
+  margin: 0 auto;
+  margin-top: 29px;
+  margin-bottom: 33px;
+  margin-left: 20px;
+
+  color: $title-clr;
+
+  @include font-styles(24px, normal, 24px, left, none);
+}
+
+.additional-goods__list {
+  margin-bottom: 38px;
+  padding: 0 20px;
+
+  @include list-reset;
+}
+
+.additional-goods__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 19px;
+
+  border-top: 2px solid $gray--lightest;
+
+  &:last-child {
+    border-bottom: 2px solid $gray--lightest;
+  }
+}
+
+.additional-goods__name {
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 13px;
+
+  color: $additional_goods--clr;
+
+  @include font-styles(16px, normal, 16px, left, uppercase);
+}
+
+.additional-goods__description {
+  margin-bottom: 14px;
+}
+
+.additional-goods__pack {
+  margin: 0;
+
+  font-family: $phrase_description-font;
+  color: $phrase-clr;
+
+  @include font-styles(14px, normal, 14px, left, none);
+}
+
+.additional-goods__price {
+  margin: 0;
+
+  font-family: $phrase_description-font;
+  color: $phrase-clr;
+
+  @include font-styles(14px, normal, 14px, right, uppercase);
+}
+
+.additional-goods__button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @include font-styles(16px, normal, 20px, center, uppercase);
+}

@@ -1,0 +1,13 @@
+.advantages {
+  margin-bottom: 17px;
+
+  @include center-container;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include list-reset;
+}

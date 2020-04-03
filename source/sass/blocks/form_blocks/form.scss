@@ -1,0 +1,106 @@
+.form {
+  margin-bottom: 32px;
+
+  background-color: $white;
+}
+
+.form__container {
+  @include center-container;
+}
+
+.form__title-common {
+  color: $black;
+
+  @include font-styles(24px, normal, 24px, left, none);
+}
+
+.form__title {
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 25px;
+
+  font-family: $default-font;
+  color: $black;
+
+  @include font-styles(36px, normal, 60px, left, none);
+}
+
+.form__phrase {
+  margin: 0;
+  margin-bottom: 39px;
+
+  font-family: $default-font;
+  color: $black;
+
+  @include font-styles(14px, normal, 18px, left, uppercase);
+}
+
+.form__field {
+  font-family: $default-font;
+}
+
+.form__profile {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  border: none;
+}
+
+.form__profile-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.form__label-common {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+
+  color: $black--lighter;
+
+  @include font-styles(16px, normal, 18px, left, uppercase);
+}
+
+
+.form__input-common {
+  color: $gray--darkest;
+
+  border: 1px solid $gray--dark;
+
+  @include font-styles(16px, normal, 18px, left, uppercase);
+}
+
+.form__profile-input {
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-left: 13px;
+
+  appearance: none;
+}
+
+.form__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  border: 1px solid $gray--form-border;
+}
+
+.form__button {
+  width: 100%;
+  padding-top: 9px;
+  padding-bottom: 11px;
+
+  @include font-styles(16px, normal, 20px, center, uppercase);
+}
+
+.form__footnote {
+  margin-top: 20px;
+
+  font-family: $phrase_description-font;
+  color: $gray--darkest;
+
+  @include font-styles(14px, normal, 16px, center, none);
+}

@@ -1,0 +1,55 @@
+.result-list {
+  margin-top: 11px;
+  margin-bottom: 17px;
+
+  @include list-reset;
+}
+
+.result-list__item {
+  width: 124px;
+
+  &:first-child {
+    margin-right: 33px;
+  }
+}
+
+.result-list__total {
+  z-index: 1;
+
+  font-family: $default-font;
+  color: $black;
+
+  border: 1px solid $gray--dark;
+  border-radius: 3px;
+
+  @include font-styles(24px, normal, 24px, center, uppercase);
+}
+
+.result-list__total--weight {
+  padding: 10px 42px;
+}
+
+.result-list__total--days {
+  padding: 10px 21px;
+}
+
+.result-list__phrase {
+  z-index: 2;
+
+  width: 50%;
+  margin-top: 8px;
+
+  font-family: $phrase_description-font;
+  color: $gray--darkest;
+
+  background-color: $gray--lightest;
+
+  @include font-styles(12px, normal, 12px, center, none);
+}
+
+.result-list__total-result {
+  font-family: $default-font;
+  color: $black;
+
+  @include font-styles(14px, normal, 20px, center, uppercase);
+}

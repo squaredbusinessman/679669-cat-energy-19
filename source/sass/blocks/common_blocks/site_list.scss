@@ -1,0 +1,19 @@
+.site-list {
+  @include font-styles(20px, 500, 20px, center, uppercase);
+  @include list-reset;
+}
+
+.site-list__item {
+  border-bottom: 1px solid $gray--lightest;
+
+  &:first-child {
+    border-top: 1px solid $gray--lightest;
+  }
+}
+
+.site-list__link {
+  display: block;
+  padding: 24px 0;
+
+  color: $title-clr;
+}

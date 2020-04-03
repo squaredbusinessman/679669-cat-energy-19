@@ -1,0 +1,20 @@
+/*параметры текста в блоках*/
+@mixin font-styles($font-size, $font-weight, $line-height, $text-align, $text-transform: none) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: $text-align;
+  text-transform: $text-transform;
+}
+/*сброс стандартной стилизации списков*/
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*центровщик*/
+@mixin center-container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
