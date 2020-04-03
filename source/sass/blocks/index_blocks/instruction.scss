@@ -29,6 +29,7 @@
 
   display: flex;
   margin-bottom: 20px;
+
   &::before {
     &::before {
       content: "";
@@ -82,4 +83,3 @@
 
   @include font-styles(14px, normal, 18px, left, none);
 }
-

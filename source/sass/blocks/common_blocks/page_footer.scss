@@ -24,6 +24,7 @@
 
   background-color: $gray--lighter;
 }
+
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -45,6 +46,7 @@
   &:hover {
     opacity: 0.8;
   }
+
   &:active:focus {
     opacity: 0.3;
   }
@@ -56,8 +58,6 @@
   @include list-reset;
 }
 
-
 .page-footer__copyright {
   padding-top: 18px;
 }
-

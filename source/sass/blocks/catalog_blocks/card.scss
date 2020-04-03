@@ -2,15 +2,9 @@
   padding-bottom: 24px;
 }
 
-.product-card__grid-wrapper {
-}
-
 .product-card__link-title {
   margin-top: 21px;
   margin-bottom: 10px;
-}
-
-.product-card__description-wrapper {
 }
 
 .product-card__title {
@@ -29,9 +23,6 @@
   color: $phrase-clr;
 
   @include font-styles(12px, normal, 16px, auto, none);
-}
-
-.product-card__table tr {
 }
 
 .product-card__option {
@@ -53,4 +44,3 @@
 
   @include font-styles(16px, normal, 20px, center, uppercase);
 }
-

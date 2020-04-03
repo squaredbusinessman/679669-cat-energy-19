@@ -4,6 +4,7 @@
   padding: 0 20px;
 
   border: none;
+
   &:last-child {
     margin-bottom: 6px;
   }
@@ -37,6 +38,7 @@
 
 .form-question__radio {
   display: none;
+
   &:checked + .form-question__label::after {
     content: "";
     position: absolute;

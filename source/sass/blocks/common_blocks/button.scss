@@ -5,7 +5,7 @@
   vertical-align: middle;
   color: $green_button_text;
 
-  background-color:$green;
+  background-color: $green;
   border: none;
 
   @include font-styles(14px, normal, 18px, center, uppercase);
@@ -14,6 +14,7 @@
   &:hover {
     background-color: $green--dark;
   }
+
   &:active:focus {
     color: $down-gray;
 

@@ -9,14 +9,15 @@
   border-bottom: 2px solid $border_gray--clr;
 }
 
-
 .social-list__item {
   &:last-child {
     margin-right: 82px;
   }
+
   &:nth-child(2) {
     margin-right: 40px;
   }
+
   &:first-child {
     margin-right: 36px;
   }

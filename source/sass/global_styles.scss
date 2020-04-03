@@ -1,5 +1,4 @@
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -25,9 +24,8 @@ img {
   max-width: 100%;
   height: auto;
 }
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  margin: 0;
 
-  -webkit-appearance: none;
+input {
+  margin: 0;
+  appearance: none;
 }

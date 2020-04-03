@@ -30,6 +30,7 @@
   padding-bottom: 19px;
 
   border-top: 2px solid $gray--lightest;
+
   &:last-child {
     border-bottom: 2px solid $gray--lightest;
   }
@@ -58,7 +59,6 @@
   @include font-styles(14px, normal, 14px, left, none);
 }
 
-
 .additional-goods__price {
   margin: 0;
 
@@ -74,4 +74,3 @@
 
   @include font-styles(16px, normal, 20px, center, uppercase);
 }
-
