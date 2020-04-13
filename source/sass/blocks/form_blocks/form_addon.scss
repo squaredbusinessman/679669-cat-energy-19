@@ -1,12 +1,13 @@
 .form-addon {
-  margin: 0;
-  margin-bottom: 18px;
+  margin: 0 0 18px;
   padding: 0;
 
   border: none;
 }
 
 .form-addon__title {
+  position: relative;
+
   margin-bottom: 39px;
 
   &::after {
@@ -23,6 +24,8 @@
 }
 
 .form-addon__label {
+  position: relative;
+
   margin-bottom: 24px;
   margin-left: 46px;
 
@@ -58,5 +61,102 @@
     border-bottom: 3px solid $green;
     border-left: 3px solid $green;
     transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-addon {
+    margin-bottom: 11px;
+  }
+
+  .form-addon__title {
+    margin-bottom: 67px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 23px;
+      left: -69px;
+
+      width: 30px;
+      height: 3px;
+
+      background-color: $green;
+    }
+
+    &::after {
+      top: 23px;
+      right: -488px;
+
+      width: 445px;
+    }
+  }
+
+  .form-addon__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-addon__label {
+    width: 35%;
+    margin-bottom: 52px;
+    margin-left: 59px;
+
+    &:nth-child(even) {
+      margin-right: 6px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: -58px;
+
+      width: 39px;
+      height: 39px;
+
+      border: 1px solid $gray--form-border;
+    }
+  }
+
+  .form-addon__input:checked + .form-addon__label::after {
+    top: 0;
+    left: -49px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-addon {
+    margin-bottom: 19px;
+  }
+
+  .form-addon__title {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 23px;
+      left: -110px;
+
+      width: 70px;
+      height: 3px;
+
+      background-color: $green;
+    }
+
+    &::after {
+      top: 23px;
+      right: -1119px;
+
+      width: 1078px;
+    }
+  }
+
+  .form-addon__label {
+    width: 15%;
+
+    &:nth-child(even) {
+      margin-right: 3px;
+    }
   }
 }

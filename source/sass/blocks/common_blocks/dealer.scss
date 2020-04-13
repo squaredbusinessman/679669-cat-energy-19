@@ -1,8 +1,3 @@
-.dealer {
-  padding-top: 24px;
-  padding-bottom: 26px;
-}
-
 .dealer__wrapper {
   display: flex;
   justify-content: space-between;
@@ -48,4 +43,93 @@
   color: $phrase-clr;
 
   @include font-styles(14px, normal, 20px, left, none);
+}
+
+@media (min-width: $tablet-width) {
+  .dealer__wrapper {
+    width: 630px;
+    padding-top: 64px;
+    padding-bottom: 56px;
+    margin: 0 auto;
+  }
+
+  .dealer__title {
+    width: 30%;
+    margin: 0;
+
+    @include font-styles(20px, normal, 25px, left, uppercase);
+  }
+
+  .dealer__location {
+    width: 30%;
+    margin: 0;
+  }
+
+  .dealer__address {
+    margin: 0;
+
+    @include font-styles(16px, normal, 20px, right, none);
+  }
+
+  .dealer__city {
+    width: 100%;
+    margin-top: 15px;
+
+    @include font-styles(16px, normal, 20px, right, none);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .dealer {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    margin-top: 97px;
+    margin-left: 170px;
+    padding: 0;
+    z-index: 1;
+    background-color: $white;
+  }
+
+  .dealer__wrapper {
+    width: 570px;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
+
+  .dealer__title {
+    width: 154px;
+    margin: 0;
+    margin-right: 95px;
+    margin-left: 75px;
+  }
+
+  .dealer__title--index {
+    margin-top: 7px;
+  }
+
+  .dealer__location {
+    align-items: baseline;
+    width: 163px;
+  }
+
+  .dealer__location--index {
+    margin-top: 0;
+  }
+
+  .dealer__address {
+    margin-top: 7px;
+    margin-right: 0;
+    margin-bottom: 5px;
+
+    text-align: left;
+  }
+
+  .dealer__city {
+    text-align: left;
+  }
 }

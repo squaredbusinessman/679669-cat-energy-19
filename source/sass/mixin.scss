@@ -18,3 +18,24 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+/*миксин скрытия элементов*/
+@mixin visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+/*сброс маргинов и паддингов*/
+@mixin indent-reset {
+  margin: 0 auto;
+  padding: 0;
+}

@@ -1,8 +1,58 @@
 .main-nav {
+  margin-top: 20px;
+  margin-right: 20px;
+  display: flex;
   background-color: $white;
 }
 
 .main-nav__wrapper {
   width: 320px;
   margin: 0 auto;
+}
+
+.main-nav__burger {
+  content: "";
+  top: 22px;
+  left: 32px;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: $black--lighter;
+  box-shadow: 0 8px 0 0 $black--lighter, 0 16px 0 0 $black--lighter;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    margin-right: 31px;
+  }
+
+  .main-nav__wrapper {
+    width: 440px;
+  }
+
+  .main-nav--closed {
+    display: block;
+  }
+
+  .main-nav__burger {
+    display: none; /*лучше делать так или как на 55 строчке?*/
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    margin: 0;
+    background-color: transparent;
+  }
+
+  .main-nav__wrapper {
+    width: 480px;
+  }
+
+  .main-nav__burger {
+    @include visually-hidden;
+  }
 }

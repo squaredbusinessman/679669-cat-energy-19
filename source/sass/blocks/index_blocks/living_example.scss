@@ -1,5 +1,6 @@
 .living-example {
   width: 100%;
+  padding-top: 17px;
 
   background-color: $gray--lightest;
 }
@@ -7,31 +8,25 @@
 .living-example__center {
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
 
   @include center-container;
 }
 
 .living-example__title {
-  margin-top: 16px;
-  margin-bottom: 25px;
-  margin-left: 0;
+  @include center-container;
+  margin-bottom: 10px;
 
+  @include font-styles(36px, normal, 60px, left, none);
   font-family: $default-font;
   color: $black;
-
-  @include center-container;
-  @include font-styles(36px, normal, 60px, left, none);
 }
 
 .living-example__phrase {
   width: 99%;
-  margin-bottom: 29px;
-
-  font-family: $phrase_description-font;
-  color: $gray--darkest;
 
   @include font-styles(14px, normal, 18px, left, none);
+  font-family: $phrase_description-font;
+  color: $gray--darkest;
 }
 
 .living-example__result-wrapper {
@@ -44,9 +39,92 @@
 }
 
 .living-example__compare {
+  @include indent-reset;
   display: flex;
   flex-direction: column;
   width: 320px;
-  margin: 0 auto;
-  padding-bottom: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .living-example {
+    background: linear-gradient(to bottom, $white 50%, $gray--lightest 50%);
+  }
+
+  .living-example__center {
+    width: 708px;
+    margin-bottom: 229px;
+  }
+
+  .living-example__title {
+    width: 708px;
+    margin-top: 25px;
+    margin-bottom: 48px;
+
+    @include font-styles(60px, normal, 60px, left, none);
+  }
+
+  .living-example__phrase {
+    width: 97%;
+    margin-bottom: 46px;
+
+    @include font-styles(16px, normal, 24px, left, none);
+  }
+
+  .living-example__result-wrapper {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .living-example__compare {
+    width: 768px;
+    padding-bottom: 35px;
+
+    background: linear-gradient(#ffffff 50%, #eeeeee 50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .living-example {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 620px;
+    margin-bottom: 0;
+    padding: 0;
+
+    background-color: $white;
+    border: none;
+  }
+
+  .living-example__center {
+    justify-content: flex-end;
+    align-items: center;
+    width: 37%;
+    margin: 0 125px 0 auto;
+
+    background-color: $gray--lightest;
+  }
+
+  .living-example__title {
+    width: 1220px;
+    margin: 25px auto 0;
+  }
+
+  .living-example__phrase {
+    width: 75%;
+    margin: 0 0 60px 37px;
+  }
+
+  .living-example__result-wrapper {
+    width: 68.5%;
+    flex-wrap: wrap;
+    margin-bottom: 27px;
+  }
+
+
+  .living-example__compare {
+    justify-content: flex-end;
+    width: 45%;
+    margin: 0 auto 0 0;
+    padding: 0;
+  }
 }

@@ -17,3 +17,50 @@
 
   color: $title-clr;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    color: $black--lighter;
+
+    @include font-styles(18px, normal, 25px, left, uppercase);
+  }
+
+  .site-list__item {
+    border: none;
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  .site-list__link {
+    padding: 22px 0;
+  }
+
+  .site-list__link--active {
+    border-bottom: 3px solid $green;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 100%;
+    margin: 0;
+
+    @include font-styles(20px, normal, 25px, right, uppercase);
+  }
+
+  .site-list__link {
+    margin-top: 15px;
+    padding: 0 0 8px;
+    color: $white;
+  }
+
+  .site-list__link--active {
+    border-bottom: 2px solid $white;
+  }
+}

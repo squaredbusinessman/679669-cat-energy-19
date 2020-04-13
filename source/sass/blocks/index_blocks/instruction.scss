@@ -1,13 +1,15 @@
 .instruction {
   margin-bottom: 22px;
+}
 
+.instruction__wrapper {
   @include center-container;
 }
 
 .instruction__title {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0;
+  @include indent-reset;
+  margin-top: 17px;
+  margin-bottom: 28px;
 
   color: $title-clr;
 
@@ -28,26 +30,25 @@
   position: relative;
 
   display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
 
   &::before {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 5px;
-      left: 5px;
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
 
-      width: 60px;
-      height: 60px;
+    width: 60px;
+    height: 60px;
 
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 }
 
-.instruction__item--bg-image {
-  width: 70%;
+.instruction__item--background-image {
+  margin-right: 15px;
 }
 
 .instruction__item--benefit {
@@ -69,17 +70,121 @@
 }
 
 .instruction__item--term {
+  margin-bottom: 42px;
+
   &::before {
     background-image: url("../img/advantage-clock@1x.png");
   }
 }
 
 .instruction__description {
-  margin: 0 auto;
-  margin-top: 2px;
+  width: 195px;
+  margin: 2px auto 0;
 
   font-family: $phrase_description-font;
   color: $phrase-clr;
 
   @include font-styles(14px, normal, 18px, left, none);
+}
+
+@media (min-width: $tablet-width) {
+  .instruction {
+    margin-bottom: 0;
+    border-bottom: 1px solid $gray;
+  }
+
+  .instruction__wrapper {
+    width: 708px;
+  }
+
+  .instruction__title {
+    @include indent-reset;
+    @include font-styles(60px, normal, 60px, left);
+  }
+
+  .instruction__list {
+    counter-reset: section;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  .instruction__item {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 325px;
+    margin-top: 71px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::before {
+      top: 16px;
+      left: 16px;
+    }
+
+    &::after {
+      counter-increment: section;
+      content: counter(section);
+      position: absolute;
+      top: -38px;
+      left: 114px;
+      z-index: -1;
+
+      width: 71px;
+      height: 228px;
+
+      font-size: 281px;
+      line-height: 281px;
+      text-align: left;
+      color: $gray--lightest;
+    }
+  }
+
+  .instruction__item--term {
+    margin-bottom: 59px;
+  }
+
+  .instruction__item--background-image {
+    width: 80px;
+    height: 81px;
+    margin-bottom: 31px;
+  }
+
+  .instruction__item--background-image rect {
+    width: 80px;
+    height: 81px;
+  }
+
+  .instruction__description {
+    width: 76%;
+    margin: 0 0 43px;
+
+    @include font-styles(16px, normal, 24px, left, none);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .instruction {
+    margin-bottom: 0;
+  }
+
+  .instruction__wrapper {
+    width: 1220px;
+  }
+
+  .instruction__title {
+    margin-left: 0;
+  }
+
+  .instruction__item {
+    width: 20%;
+  }
+
+  .instruction__description {
+    width: 100%;
+  }
 }

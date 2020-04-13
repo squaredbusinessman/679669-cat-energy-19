@@ -1,13 +1,13 @@
 .form-owner {
-  margin: 0;
-  margin-top: 29px;
-  margin-bottom: 15px;
+  margin: 29px 0 15px;
   padding: 0;
 
   border: none;
 }
 
 .form-owner__title {
+  position: relative;
+
   margin-bottom: 34px;
 
   &::after {
@@ -24,6 +24,11 @@
 }
 
 .form-owner__grid {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 15px;
 }
 
@@ -38,4 +43,130 @@
   padding-left: 12px;
 
   border: 1px solid $gray--form-border;
+}
+
+.form-owner__label-input-email {
+  width: 204px;
+}
+
+.form-owner__label-input-tel {
+  width: 187px;
+}
+
+.form-owner__icon {
+  position: absolute;
+}
+
+.form-owner__icon--mail {
+  top: 15px;
+  right: 36px;
+}
+
+.form-owner__icon--tel {
+  top: 12px;
+  right: 33px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-owner {
+    margin-top: 75px;
+    margin-bottom: 46px;
+  }
+
+  .form-owner__title {
+    width: 100%;
+    margin-bottom: 77px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 23px;
+      left: -69px;
+
+      width: 30px;
+      height: 3px;
+
+      background-color: $green;
+    }
+
+    &::after {
+      top: 22px;
+      right: -69px;
+
+      width: 145px;
+    }
+  }
+
+  .form-owner__grid {
+    width: 630px;
+    margin-bottom: 20px;
+  }
+
+  .form-owner__label-input {
+    margin-right: 0;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    padding-left: 26px;
+  }
+
+  .form-owner__label-input-email {
+    width: 519px;
+  }
+
+  .form-owner__label-input-tel {
+    width: 535px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-owner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -3px;
+  }
+
+  .form-owner__title {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 23px;
+      left: -110px;
+
+      width: 70px;
+      height: 3px;
+
+      background-color: $green;
+    }
+
+    &::after {
+      top: 22px;
+      right: -110px;
+
+      width: 775px;
+    }
+  }
+
+  .form-owner__grid {
+    width: 46.5%;
+  }
+
+  .form-owner__label-input-email {
+    width: 462px;
+    padding-left: 16px;
+  }
+
+  .form-owner__label-input-tel {
+    padding-left: 19px;
+  }
+
+  .form-owner__icon--mail {
+    top: 19px;
+    right: 16px;
+  }
+
+  .form-owner__icon--tel {
+    top: 16px;
+    right: 17px;
+  }
 }
