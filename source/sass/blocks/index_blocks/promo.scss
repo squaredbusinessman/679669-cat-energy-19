@@ -4,6 +4,10 @@
   margin-bottom: 22px;
 }
 
+.promo__container {
+  @include center-container;
+}
+
 .promo__wrapper {
   display: flex;
   flex-direction: column;
@@ -11,8 +15,6 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
-  @include center-container;
 }
 
 .promo__header {
@@ -53,4 +55,92 @@
   height: 306px;
 
   background-color: $green-background;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    height: 814px; /*для сетки, потому что пока без контентных изображений для планшета и десктопа*/
+  }
+
+  .promo__container {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .promo__wrapper {
+    width: 620px;
+    margin-top: 12px;
+    margin-left: 87px;
+
+    background-image: none;
+  }
+
+  .promo__header {
+    width: 427px;
+    margin-bottom: 41px;
+
+    @include font-styles(60px, normal, 60px, left, none);
+    color: $black;
+  }
+
+  .promo__phrase {
+    margin-bottom: 48px;
+    padding: 0;
+
+    @include font-styles(20px, normal, 20px, left, uppercase);
+    color: $black;
+  }
+
+  .promo__picture-wrapper {
+    position: absolute;
+  }
+
+  .promo__button {
+    width: 221px;
+    padding: 15px 12px;
+
+    @include font-styles(20px, normal, 20px, center, uppercase);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    height: auto;
+    margin-bottom: 270px;
+  }
+
+  .promo__container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .promo__wrapper {
+    margin-top: 82px;
+    margin-left: 80px;
+  }
+
+  .promo__header {
+    width: 70%;
+  }
+
+  .promo__phrase {
+    margin-bottom: 54px;
+  }
+
+  .promo__picture-wrapper {
+    top: -45px;
+    right: 414px;
+  }
+
+  .promo__picture {
+    width: 552px;
+    height: 499px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .promo__button {
+    width: 20%;
+  }
 }

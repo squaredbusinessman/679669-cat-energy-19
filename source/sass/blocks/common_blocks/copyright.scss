@@ -11,3 +11,25 @@
 
   @include font-styles(16px, normal, 16px, left);
 }
+
+.copyright__logo svg {
+  width: 27px;
+  height: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 163px;
+  }
+
+  .copyright__logo svg {
+    width: 40px;
+    height: 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    justify-content: flex-end;
+  }
+}

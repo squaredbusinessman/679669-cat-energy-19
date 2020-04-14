@@ -23,3 +23,56 @@
   padding-top: 11px;
   padding-bottom: 11px;
 }
+
+@media (min-width: $tablet-width) {
+  .show-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    margin-top: 90px;
+  }
+
+  .show-all__title {
+    width: 55%;
+    padding: 165px 0 0;
+
+    @include font-styles(20px, normal, 20px, center, uppercase);
+
+    &::before {
+      top: -93px;
+      left: 50px;
+
+      width: 61px;
+      height: 61px;
+
+      background-image: url("../img/icon-plus-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  .show-all__phrase {
+    width: 70%;
+    margin: 26px auto 0;
+
+    @include font-styles(16px, normal, 18px, center, none);
+  }
+
+  .show-all__button {
+    margin: 86px 0 0;
+    padding-bottom: 7px;
+
+    @include font-styles(16px, normal, 20px, center, uppercase);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-all__title {
+    width: 90%;
+  }
+
+  .show-all__phrase {
+    width: 100%;
+  }
+}

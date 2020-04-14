@@ -1,19 +1,18 @@
-.result-list {
-  margin-top: 11px;
-  margin-bottom: 17px;
-
+.result {
   @include list-reset;
+  margin-top: 24px;
+  margin-bottom: 20px;
 }
 
-.result-list__item {
+.result__item {
   width: 124px;
 
   &:first-child {
-    margin-right: 33px;
+    margin-right: 30px;
   }
 }
 
-.result-list__total {
+.result__total {
   z-index: 1;
 
   font-family: $default-font;
@@ -25,15 +24,17 @@
   @include font-styles(24px, normal, 24px, center, uppercase);
 }
 
-.result-list__total--weight {
-  padding: 10px 42px;
+.result__total--weight {
+  padding: 7px 41px;
 }
 
-.result-list__total--days {
-  padding: 10px 21px;
+.result__total--days {
+  padding: 10px 20px;
 }
 
-.result-list__phrase {
+.result__phrase {
+  @include indent-reset;
+
   z-index: 2;
 
   width: 50%;
@@ -47,9 +48,75 @@
   @include font-styles(12px, normal, 12px, center, none);
 }
 
-.result-list__total-result {
-  font-family: $default-font;
-  color: $black;
+.result__total-costs {
+  margin: 0 auto;
+  margin-bottom: 33px;
 
   @include font-styles(14px, normal, 20px, center, uppercase);
+  font-family: $default-font;
+  color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .result__item {
+    width: 162px;
+
+    &:first-child {
+      margin-right: 42px;
+    }
+  }
+
+  .result__total {
+    @include font-styles(30px, normal, 37px, center, uppercase);
+  }
+
+  .result__total--weight {
+    padding: 10px 57px 15px 55px;
+  }
+
+  .result__total--days {
+    padding: 10px 29px 15px 29px;
+  }
+
+  .result__phrase {
+    width: 80%;
+    margin-top: 11px;
+
+    background-color: $white;
+
+    @include font-styles(14px, normal, 14px, center, none);
+  }
+
+  .result__total-costs {
+    width: 25%;
+    margin-right: 0;
+    margin-bottom: 37px;
+
+    @include font-styles(20px, normal, 20px, right, uppercase);
+  }
+
+  .result__total-costs span {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .result {
+    margin-bottom: 55px;
+  }
+
+  .result__phrase {
+    background-color: $gray;
+  }
+
+  .result__total-costs {
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
+
+  .result__total-costs span {
+    margin-right: 64px;
+  }
 }

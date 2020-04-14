@@ -15,9 +15,7 @@
 }
 
 .form__title {
-  margin: 0;
-  margin-top: 16px;
-  margin-bottom: 25px;
+  margin: 16px 0 25px;
 
   font-family: $default-font;
   color: $black;
@@ -26,8 +24,7 @@
 }
 
 .form__phrase {
-  margin: 0;
-  margin-bottom: 39px;
+  margin: 0 0 39px;
 
   font-family: $default-font;
   color: $black;
@@ -40,8 +37,9 @@
 }
 
 .form__profile {
-  margin: 0;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 10px;
   padding: 0;
 
   border: none;
@@ -64,6 +62,17 @@
   @include font-styles(16px, normal, 18px, left, uppercase);
 }
 
+.form__profile-label-name + .form__profile-input {
+  width: 211px;
+}
+
+.form__profile-label-weight + .form__profile-input {
+  width: 187px;
+}
+
+.form__profile-label-age + .form__profile-input {
+  width: 155px;
+}
 
 .form__input-common {
   color: $gray--darkest;
@@ -103,4 +112,149 @@
   color: $gray--darkest;
 
   @include font-styles(14px, normal, 16px, center, none);
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    margin-top: 57px;
+    margin-bottom: 73px;
+  }
+
+  .form__title-common {
+    @include font-styles(36px, normal, 36px, left, none);
+  }
+
+  .form__title {
+    margin-top: 0;
+    margin-bottom: 56px;
+
+    @include font-styles(60px, normal, 60px, left, none);
+  }
+
+  .form__phrase {
+    width: 50%;
+    margin-bottom: 65px;
+    padding-left: 40px;
+
+    @include font-styles(20px, normal, 30px, left, uppercase);
+  }
+
+  .form__field {
+    padding: 0 40px;
+  }
+
+  .form__profile {
+    margin-bottom: 50px;
+  }
+
+  .form__profile-grid {
+    margin-bottom: 21px;
+  }
+
+  .form__label-common {
+    @include font-styles(20px, normal, 20px, left, uppercase);
+  }
+
+  .form__profile-label-name + .form__profile-input {
+    width: 546px;
+  }
+
+  .form__profile-label-weight + .form__profile-input {
+    width: 514px;
+  }
+
+  .form__profile-label-age + .form__profile-input {
+    width: 475px;
+  }
+
+  .form__input-common {
+    @include font-styles(20px, normal, 20px, left, uppercase);
+  }
+
+  .form__profile-input {
+    padding-top: 14px;
+    padding-bottom: 16px;
+    padding-left: 19px;
+  }
+
+  .form__wrapper {
+    width: 630px;
+    margin: 0;
+  }
+
+  .form-field__container {
+    width: 630px;
+    margin: auto;
+  }
+
+  .form__button {
+    width: 45%;
+    padding-top: 16px;
+    padding-bottom: 17px;
+
+    @include font-styles(20px, normal, 20px, center, uppercase);
+  }
+
+  .form__footnote {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 40%;
+    margin: 0 0 0 24px;
+
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 76px;
+    margin-bottom: 81px;
+  }
+
+  .form__container {
+    width: 39%;
+    margin: 0;
+    padding-left: 9.8vw;
+  }
+
+  .form__phrase {
+    width: 56%;
+    padding-left: 0;
+  }
+
+  .form__field {
+    width: 44%;
+    padding: 0;
+  }
+
+  .form__profile-label-name + .form__profile-input {
+    width: 486px;
+  }
+
+  .form__profile-label-weight + .form__profile-input {
+    width: 455px;
+  }
+
+  .form__profile-label-age + .form__profile-input {
+    width: 416px;
+  }
+
+  .form__wrapper {
+    width: 568px;
+    margin: 240px 9.6vw 72px 17px;
+  }
+
+  .form-field__container {
+    width: 80.2%;
+  }
+
+  .form__button {
+    width: 46.7%;
+  }
+
+  .form__footnote {
+    width: 24%;
+  }
 }

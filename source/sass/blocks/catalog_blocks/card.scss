@@ -1,13 +1,13 @@
-.product-card {
+.card {
   padding-bottom: 24px;
 }
 
-.product-card__link-title {
+.card__link-title {
   margin-top: 21px;
   margin-bottom: 10px;
 }
 
-.product-card__title {
+.card__title {
   margin: 0;
 
   font-family: $default-font;
@@ -16,7 +16,7 @@
   @include font-styles(16px, normal, 20px, left, uppercase);
 }
 
-.product-card__table {
+.card__table {
   margin: 0;
 
   font-family: $phrase_description-font;
@@ -25,22 +25,85 @@
   @include font-styles(12px, normal, 16px, auto, none);
 }
 
-.product-card__option {
+.card__table tr {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card__option {
   margin: 0;
   padding: 0;
 
   text-align: left;
 }
 
-.product-card__value {
+.card__value {
   margin: 0;
   padding: 0;
 
   text-align: right;
 }
 
-.product-card__button {
+.card__button {
   padding: 10px 0;
 
   @include font-styles(16px, normal, 20px, center, uppercase);
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    padding-bottom: 40px;
+  }
+
+  .card__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card__link-picture {
+    margin-bottom: 34px;
+  }
+
+  .card__link-title {
+    width: 55%;
+    margin: 0 auto 16px;
+  }
+
+  .card__description-wrapper {
+    width: 100%;
+    margin-bottom: 31px;
+    padding-top: 18px;
+  }
+
+  .card__title {
+    @include font-styles(20px, normal, 20px, center, uppercase);
+  }
+
+  .card__table {
+    @include font-styles(16px, normal, 16px, auto, none);
+  }
+
+  .card__table tr {
+    padding-top: 9px;
+    padding-bottom: 6px;
+
+    border-bottom: 2px solid $gray--lighter;
+  }
+
+  .card__button {
+    padding-top: 11px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__link-title {
+    width: 77%;
+  }
+
+  .card__button {
+    width: 169px;
+  }
 }

@@ -1,6 +1,8 @@
 .form-question {
-  margin: 0 auto;
-  margin-top: 21px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 21px auto 0;
   padding: 0 20px;
 
   border: none;
@@ -50,5 +52,40 @@
 
     background-color: $green;
     border-radius: 50%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-question {
+    width: 630px;
+    margin-top: 29px;
+    margin-right: 0;
+    margin-left: 23px;
+  }
+
+  .form-question__label {
+    margin-bottom: 28px;
+
+    &::before {
+      top: -10px;
+      left: -60px;
+
+      width: 39px;
+      height: 39px;
+    }
+  }
+
+  .form-question__radio:checked + .form-question__label::after {
+    top: 1px;
+    left: -48px;
+
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-question {
+    margin-left: 20px;
   }
 }

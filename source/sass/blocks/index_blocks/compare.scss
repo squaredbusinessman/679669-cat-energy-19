@@ -1,5 +1,5 @@
 .compare__group-pic {
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 }
 
 .compare__img {
@@ -7,7 +7,7 @@
   height: 242px;
 }
 
-.compare_img--after {
+.compare__img--after {
   display: none;
 }
 
@@ -15,18 +15,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 60px;
+  padding: 0 54px;
+  margin-bottom: 34px;
 }
 
-.compare__btn {
+.compare__button {
+  @include font-styles(16px, normal, 20px, left, uppercase);
   font-family: $default-font;
-
   border: none;
 
-  @include font-styles(16px, normal, 20px, left, uppercase);
+  background-color: $gray--lightest;
 }
 
 .compare__progress {
+  position: relative;
   width: 84px;
   height: 14px;
 
@@ -35,7 +37,8 @@
   border-radius: 15px;
 }
 
-.compare__tog {
+.compare__toggle {
+  position: absolute;
   width: 35px;
   height: 6px;
   margin-top: 4px;
@@ -43,4 +46,86 @@
 
   background-color: $green;
   border-radius: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .compare__group-pic {
+    position: relative;
+
+    margin-bottom: 25px;
+  }
+
+  .compare__img {
+    width: 690px;
+    height: 510px;
+  }
+
+  .compare__img--before {
+    margin-top: -170px;
+    margin-left: 45px;
+  }
+
+  .compare__range {
+    position: relative;
+
+    padding: 0 99px;
+  }
+
+  .compare__button {
+    padding: 0;
+    padding-bottom: 6px;
+
+    background-color: transparent;
+    border-bottom: 1px dotted $gray;
+
+    @include font-styles(20px, normal, 20px, left, uppercase);
+  }
+
+  .compare__progress {
+    width: 428px;
+    height: 6px;
+
+    background-color: $gray--progress-bar;
+    border-radius: 3px;
+  }
+
+  .compare__toggle {
+    position: absolute;
+    top: -20px;
+    left: 191px;
+
+    width: 32px;
+    height: 32px;
+
+    background-color: $white;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='4' cx='4' cy='4' fill='%2368b738'%3E%3C/circle%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 12px 12px;
+    border: 1px solid $gray--progress-bar;
+    border-radius: 50%;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .compare__img {
+    position: absolute;
+    top: -530px;
+    left: -60px;
+
+    width: 690px;
+    height: 517px;
+  }
+
+  .compare__img--before {
+    margin: 0;
+  }
+
+  .compare__range {
+    width: 81.5%;
+    margin-bottom: 67px;
+    margin-left: 20px;
+    padding: 0;
+  }
 }
