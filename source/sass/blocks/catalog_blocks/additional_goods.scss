@@ -1,14 +1,32 @@
 .additional-goods {
   width: 320px;
-  margin: 66px auto 35px;
+  margin: 0 auto 35px;
 }
 
 .additional-goods__title {
+  position: relative;
   margin: 29px auto 33px 20px;
 
   color: $title-clr;
 
   @include font-styles(24px, normal, 24px, left, none);
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    top: 54%;
+    left: 82.2%;
+
+    width: 53px;
+    height: 3px;
+    background-color: $green;
+  }
+}
+
+.additional-goods__wrapper {
+  margin-bottom: 38px;
+  padding: 0 20px;
 }
 
 .additional-goods__list {
@@ -22,7 +40,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
 
   border-top: 2px solid $gray--lightest;
 
@@ -40,6 +58,8 @@
 }
 
 .additional-goods__description {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 14px;
 }
 
@@ -75,13 +95,16 @@
   }
 
   .additional-goods__wrapper {
+    padding: 0;
     margin-bottom: 69px;
 
     border: 2px solid $gray--lightest;
   }
 
   .additional-goods__title {
-    margin-bottom: 80px;
+    width: 50%;
+    position: relative;
+    margin-bottom: 77px;
     margin-left: 37px;
 
     @include font-styles(36px, normal, 36px, left, none);
@@ -162,20 +185,39 @@
   .additional-goods {
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
+    width: 1220px;
     margin-top: 0;
     margin-bottom: 18px;
   }
 
+  .additional-goods__title {
+    margin-top: 22px;
+    margin-bottom: 80px;
+    margin-left: 0;
+
+    &::before {
+      right: 112%;
+      width: 500px;
+    }
+
+    &::after {
+      right: -307%;
+      width: 1000px;
+    }
+  }
+
   .additional-goods__wrapper {
-    width: 72%;
+    width: 73.4%;
 
     border: none;
   }
 
   .additional-goods__item {
-    justify-content: flex-start;
-    padding: 24px 40px 6px;
+    min-width: 895px;
+    min-height: 70px;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
 
     &:first-child {
       border-top: 2px solid $gray--lightest;
@@ -187,11 +229,18 @@
   }
 
   .additional-goods__name {
-    margin-right: 165px;
-    margin-bottom: 0;
+    width: 285px;
+    margin: 0;
+  }
+
+  .additional-goods__description {
+    width: 285px;
+    margin: 0;
+    justify-content: space-between;
   }
 
   .additional-goods__button {
     width: 245px;
+    margin: 0;
   }
 }

@@ -1,24 +1,3 @@
-.compare__group-pic {
-  margin-bottom: 29px;
-}
-
-.compare__img {
-  width: 320px;
-  height: 242px;
-}
-
-.compare__img--after {
-  display: none;
-}
-
-.compare__range {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 54px;
-  margin-bottom: 34px;
-}
-
 .compare__button {
   @include font-styles(16px, normal, 20px, left, uppercase);
   font-family: $default-font;
@@ -27,53 +6,33 @@
   background-color: $gray--lightest;
 }
 
-.compare__progress {
-  position: relative;
-  width: 84px;
-  height: 14px;
-
-  background-color: $white;
-  border: 1px solid $gray--dark;
-  border-radius: 15px;
-}
-
-.compare__toggle {
-  position: absolute;
-  width: 35px;
-  height: 6px;
-  margin-top: 4px;
-  margin-left: 8px;
-
-  background-color: $green;
-  border-radius: 15px;
-}
-
 @media (min-width: $tablet-width) {
-  .compare__group-pic {
-    position: relative;
-
-    margin-bottom: 25px;
-  }
-
   .compare__img {
     width: 690px;
     height: 510px;
   }
 
   .compare__img--before {
-    margin-top: -170px;
-    margin-left: 45px;
+    margin-top: -163px;
+    margin-left: 46px;
+    margin-bottom: 20px;
+  }
+
+  .compare__img--after {
+    display: none;
   }
 
   .compare__range {
     position: relative;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 67px;
     padding: 0 99px;
   }
 
   .compare__button {
-    padding: 0;
-    padding-bottom: 6px;
+    padding: 0 0 6px;
 
     background-color: transparent;
     border-bottom: 1px dotted $gray;
@@ -82,6 +41,7 @@
   }
 
   .compare__progress {
+    position: relative;
     width: 428px;
     height: 6px;
 
@@ -91,8 +51,8 @@
 
   .compare__toggle {
     position: absolute;
-    top: -20px;
-    left: 191px;
+    top: -18px;
+    left: 199px;
 
     width: 32px;
     height: 32px;

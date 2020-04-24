@@ -9,12 +9,13 @@
   position: relative;
 
   margin-bottom: 39px;
+  padding: 0;
 
   &::after {
     content: "";
     position: absolute;
-    top: 12px;
-    right: -160px;
+    top: 53%;
+    left: 116%;
 
     width: 136px;
     height: 3px;

@@ -1,5 +1,6 @@
 .gift {
   min-height: 289px;
+  width: 87.8%;
   margin: 0 auto;
 
   background-color: $green;
@@ -8,15 +9,27 @@
   background-position: 0 0;
 }
 
+.gift__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .gift__icon {
   width: 56px;
   height: 61px;
+  margin-top: 65px;
+  margin-bottom: 60px;
+}
+
+.gift__icon path {
+  fill: $white;
 }
 
 .gift__phrase {
+  width: 60%;
   margin: 0 auto;
   padding: 0;
-  padding-top: 185px;
 
   font-family: $phrase_description-font;
   color: $gift_block-text_clr;
@@ -37,13 +50,19 @@
 
   .gift__content {
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    padding-top: 66px;
+    padding-top: 0;
     padding-right: 105px;
     padding-left: 90px;
   }
 
+  .gift__icon {
+    margin: 0;
+  }
+
   .gift__phrase {
+    width: 35%;
     margin: 0;
     padding-top: 8px;
     text-align: left;
@@ -54,7 +73,8 @@
   .gift {
     width: 245px;
     height: 289px;
-    margin-right: 40px;
+    margin-right: 0;
+    margin-left: 79px;
 
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
@@ -63,7 +83,7 @@
 
   .gift__content {
     flex-direction: column;
-    padding: 43px 0;
+    padding: 0 0 43px;
   }
 
   .gift__icon {
@@ -72,6 +92,7 @@
   }
 
   .gift__phrase {
+    width: 70%;
     margin: 0 auto;
     text-align: center;
   }

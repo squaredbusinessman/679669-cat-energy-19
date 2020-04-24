@@ -84,9 +84,7 @@
     position: absolute;
     display: flex;
     justify-content: flex-start;
-    margin: 0;
-    margin-top: 97px;
-    margin-left: 170px;
+    margin: 97px 0 0 170px;
     padding: 0;
     z-index: 1;
     background-color: $white;
@@ -96,16 +94,12 @@
     width: 570px;
     justify-content: flex-start;
     margin: 0;
-    padding: 0;
-    padding-top: 57px;
-    padding-bottom: 57px;
+    padding: 57px 0;
   }
 
   .dealer__title {
     width: 154px;
-    margin: 0;
-    margin-right: 95px;
-    margin-left: 75px;
+    margin: 0 95px 0 75px;
   }
 
   .dealer__title--index {

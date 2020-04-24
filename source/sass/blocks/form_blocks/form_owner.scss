@@ -1,5 +1,9 @@
+.form-owner__container {
+  @include center-container;
+}
+
 .form-owner {
-  margin: 29px 0 15px;
+  margin: 29px 0 13px;
   padding: 0;
 
   border: none;
@@ -7,14 +11,15 @@
 
 .form-owner__title {
   position: relative;
-
-  margin-bottom: 34px;
+  width: 63%;
+  margin-bottom: 31px;
+  padding: 0;
 
   &::after {
     content: "";
     position: absolute;
-    top: 14px;
-    right: -104px;
+    top: 29%;
+    left: 106%;
 
     width: 99px;
     height: 3px;
@@ -68,6 +73,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-owner__container {
+    width: 630px;
+  }
+
   .form-owner {
     margin-top: 75px;
     margin-bottom: 46px;
@@ -75,7 +84,7 @@
 
   .form-owner__title {
     width: 100%;
-    margin-bottom: 77px;
+    margin-bottom: 73px;
 
     &::before {
       content: "";
@@ -93,13 +102,13 @@
       top: 22px;
       right: -69px;
 
-      width: 145px;
+      width: 31px;
     }
   }
 
   .form-owner__grid {
     width: 630px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   .form-owner__label-input {
@@ -119,14 +128,23 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-owner__container {
+    width: 1220px;
+    padding: 0;
+  }
+
   .form-owner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: -3px;
+    margin-top: 0;
+    margin-bottom: 49px;
   }
 
   .form-owner__title {
+    width: 42.8%;
+    margin-bottom: 72px;
+
     &::before {
       content: "";
       position: absolute;
