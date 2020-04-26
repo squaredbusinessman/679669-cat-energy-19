@@ -5,6 +5,10 @@
   border: none;
 }
 
+.form-comment textarea {
+  font-family: $default-font;
+}
+
 .form-comment__title {
   position: relative;
 

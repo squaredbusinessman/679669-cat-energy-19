@@ -2,16 +2,8 @@
   height: 360px;
 }
 
-.map {
-  width: 320px;
-  height: 360px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
 .map__wrapper {
   position: relative;
-  width: 320px;
   height: 362px;
   margin: 0 auto;
   overflow: hidden;
@@ -37,17 +29,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .map {
-    width: 768px;
-    height: 400px;
-  }
-
-  .map__wrapper {
-    width: 708px;
-  }
-
   .map__wrapper-index {
-    height: 462px;
+    height: 400px;
   }
 
   .map__picture-wrapper {
@@ -61,10 +44,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .map {
-    width: 100%;
-  }
-
   .map__wrapper {
     width: 100%;
     height: auto;

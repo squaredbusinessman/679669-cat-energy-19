@@ -20,7 +20,6 @@
 
 .page-footer__background-wrapper {
   width: 100%;
-  min-height: 236px;
 
   background-color: $gray--lightest;
 }
@@ -54,7 +53,7 @@
 
 .page-footer__social-wrapper {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   border-top: 1px solid $gray;
   border-bottom: 1px solid $gray;
@@ -72,7 +71,7 @@
   .page-footer__wrapper {
     width: 708px;
     flex-direction: row;
-    padding-top: 53px;
+    padding-top: 50px;
   }
 
   .page-footer__logo {

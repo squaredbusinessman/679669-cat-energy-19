@@ -37,7 +37,7 @@
   @include font-styles(14px, normal, 18px, left, uppercase);
 }
 
-.form__field {
+.form__field input {
   font-family: $default-font;
 }
 

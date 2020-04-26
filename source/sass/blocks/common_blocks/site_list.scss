@@ -83,4 +83,10 @@
       top: 95%;
     }
   }
+
+  .site-list__link-index {
+    &::after {
+      background-color: $white;
+    }
+  }
 }
