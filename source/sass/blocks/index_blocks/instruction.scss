@@ -1,7 +1,3 @@
-.instruction {
-  margin-bottom: 22px;
-}
-
 .instruction__wrapper {
   @include center-container;
 }
@@ -181,10 +177,14 @@
   }
 
   .instruction__item {
-    width: 20%;
+    width: 21%;
+
+    &:last-child {
+      width: 20%;
+    }
   }
 
   .instruction__description {
-    width: 100%;
+    width: 101%;
   }
 }

@@ -1,63 +1,8 @@
-.result {
-  @include list-reset;
-  margin-top: 24px;
-  margin-bottom: 20px;
-}
-
-.result__item {
-  width: 124px;
-
-  &:first-child {
-    margin-right: 30px;
-  }
-}
-
-.result__total {
-  z-index: 1;
-
-  font-family: $default-font;
-  color: $black;
-
-  border: 1px solid $gray--dark;
-  border-radius: 3px;
-
-  @include font-styles(24px, normal, 24px, center, uppercase);
-}
-
-.result__total--weight {
-  padding: 7px 41px;
-}
-
-.result__total--days {
-  padding: 10px 20px;
-}
-
-.result__phrase {
-  @include indent-reset;
-
-  z-index: 2;
-
-  width: 50%;
-  margin-top: 8px;
-
-  font-family: $phrase_description-font;
-  color: $gray--darkest;
-
-  background-color: $gray--lightest;
-
-  @include font-styles(12px, normal, 12px, center, none);
-}
-
-.result__total-costs {
-  margin: 0 auto;
-  margin-bottom: 33px;
-
-  @include font-styles(14px, normal, 20px, center, uppercase);
-  font-family: $default-font;
-  color: $black;
-}
-
 @media (min-width: $tablet-width) {
+  .result {
+    @include list-reset;
+  }
+
   .result__item {
     width: 162px;
 
@@ -67,6 +12,12 @@
   }
 
   .result__total {
+    font-family: $default-font;
+    color: $black;
+
+    border: 1px solid $gray--dark;
+    border-radius: 3px;
+
     @include font-styles(30px, normal, 37px, center, uppercase);
   }
 
@@ -79,18 +30,22 @@
   }
 
   .result__phrase {
+    @include indent-reset;
     width: 80%;
-    margin-top: 11px;
 
-    background-color: $white;
+    font-family: $phrase_description-font;
+    color: $gray--darkest;
 
     @include font-styles(14px, normal, 14px, center, none);
+    background-color: $white;
+    transform: translate(0%, 70%);
   }
 
   .result__total-costs {
+    display: flex;
+    flex-direction: column;
     width: 25%;
     margin-right: 0;
-    margin-bottom: 37px;
 
     @include font-styles(20px, normal, 20px, right, uppercase);
   }
@@ -111,12 +66,13 @@
   }
 
   .result__total-costs {
-    display: flex;
+    flex-direction: row;
     width: 100%;
     padding: 0;
   }
 
   .result__total-costs span {
+
     margin-right: 64px;
   }
 }

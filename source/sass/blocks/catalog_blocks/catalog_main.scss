@@ -1,24 +1,25 @@
 .catalog-main__title {
-  margin: 14px auto 30px;
-
+  @include center-container;
+  @include font-styles(36px, normal, 60px, left);
   font-family: $default-font;
   color: $title-clr;
 
-  @include center-container;
-  @include font-styles(36px, normal, 60px, left);
+  margin-bottom: 27px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-main__title {
-    margin-top: 56px;
-    margin-bottom: 74px;
-
+    @include indent-reset;
     @include font-styles(60px, normal, 60px, left, none);
+    width: 708px;
+    margin-top: 38px;
+    margin-bottom: 23px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-main__title {
+    width: 1220px;
     margin-top: 75px;
     margin-bottom: 74px;
   }

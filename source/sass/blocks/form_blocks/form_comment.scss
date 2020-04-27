@@ -1,14 +1,19 @@
 .form-comment {
-  margin: 0 0 30px;
+  margin: 0 0 28px;
   padding: 0;
 
   border: none;
+}
+
+.form-comment textarea {
+  font-family: $default-font;
 }
 
 .form-comment__title {
   position: relative;
 
   margin-bottom: 35px;
+  padding: 0;
 
   &::after {
     content: "";
@@ -75,7 +80,7 @@
 
 @media (min-width: $desktop-width) {
   .form-comment {
-    margin-bottom: 68px;
+    margin-bottom: 66px;
   }
 
   .form-comment__title {

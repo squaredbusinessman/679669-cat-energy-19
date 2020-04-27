@@ -24,6 +24,13 @@
   cursor: pointer;
 }
 
+@media (max-width: $mobile-only-width) {
+  .main-nav__burger {
+    position: absolute;
+    left: 85%;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     margin-right: 31px;

@@ -8,6 +8,11 @@
   @include center-container;
 }
 
+
+.form__title-wrapper {
+  @include center-container;
+}
+
 .form__title-common {
   color: $black;
 
@@ -24,7 +29,7 @@
 }
 
 .form__phrase {
-  margin: 0 0 39px;
+  margin: 0 0 37px;
 
   font-family: $default-font;
   color: $black;
@@ -32,7 +37,7 @@
   @include font-styles(14px, normal, 18px, left, uppercase);
 }
 
-.form__field {
+.form__field input {
   font-family: $default-font;
 }
 
@@ -49,13 +54,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .form__label-common {
   display: flex;
   align-items: center;
-  margin-right: 16px;
 
   color: $black--lighter;
 
@@ -106,7 +110,7 @@
 }
 
 .form__footnote {
-  margin-top: 20px;
+  margin-top: 17px;
 
   font-family: $phrase_description-font;
   color: $gray--darkest;
@@ -116,8 +120,16 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    margin-top: 57px;
+    margin-top: 37px;
     margin-bottom: 73px;
+  }
+
+  .form__title-wrapper {
+    width: 708px;
+  }
+
+  .form__container {
+    width: 631px;
   }
 
   .form__title-common {
@@ -133,7 +145,7 @@
 
   .form__phrase {
     width: 50%;
-    margin-bottom: 65px;
+    margin-bottom: 62px;
     padding-left: 40px;
 
     @include font-styles(20px, normal, 30px, left, uppercase);
@@ -144,11 +156,11 @@
   }
 
   .form__profile {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   .form__profile-grid {
-    margin-bottom: 21px;
+    margin-bottom: 15px;
   }
 
   .form__label-common {
@@ -156,7 +168,7 @@
   }
 
   .form__profile-label-name + .form__profile-input {
-    width: 546px;
+    width: 544px;
   }
 
   .form__profile-label-weight + .form__profile-input {
@@ -179,7 +191,7 @@
 
   .form__wrapper {
     width: 630px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .form-field__container {
@@ -209,24 +221,49 @@
   .form {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 76px;
+    margin-top: 74px;
     margin-bottom: 81px;
   }
 
+  .form__title-wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
   .form__container {
-    width: 39%;
+    width: 49.8%;
     margin: 0;
-    padding-left: 9.8vw;
+    padding: 0;
+  }
+
+  .form__profile {
+    width: 94%;
+    margin: 0;
+  }
+
+  .form__profile-input {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  .form__profile-grid {
+    margin-bottom: 20px;
   }
 
   .form__phrase {
     width: 56%;
     padding-left: 0;
+    margin-bottom: 65px;
   }
 
   .form__field {
-    width: 44%;
+    width: 1220px;
+    margin: 0 auto;
     padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .form__profile-label-name + .form__profile-input {
@@ -242,8 +279,8 @@
   }
 
   .form__wrapper {
-    width: 568px;
-    margin: 240px 9.6vw 72px 17px;
+    width: 46.5%;
+    margin: 0 0 70px;
   }
 
   .form-field__container {

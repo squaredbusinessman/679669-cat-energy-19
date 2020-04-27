@@ -28,6 +28,12 @@
   margin-left: 20px;
 }
 
+@media (max-width: $mobile-only-width) {
+  .page-header__menu {
+    position: relative;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     width: 768px;

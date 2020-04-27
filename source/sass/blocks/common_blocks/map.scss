@@ -1,10 +1,9 @@
-.map {
-  position: relative;
+.map__background {
+  height: 360px;
 }
 
 .map__wrapper {
   position: relative;
-  width: 320px;
   height: 362px;
   margin: 0 auto;
   overflow: hidden;
@@ -24,9 +23,18 @@
   }
 }
 
+.map__picture-wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
-  .map__wrapper {
-    width: 708px;
+  .map__wrapper-index {
+    height: 400px;
+  }
+
+  .map__picture-wrapper {
+    width: 768px;
   }
 
   .map__picture {
@@ -44,6 +52,10 @@
       top: 152px;
       left: 1055px;
     }
+  }
+
+  .map__picture-wrapper {
+    width: 1220px;
   }
 
   .map__picture {

@@ -1,7 +1,7 @@
 .copyright {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -13,23 +13,27 @@
 }
 
 .copyright__logo svg {
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  height: 47px;
+
+  path {
+    fill: $black;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     width: 163px;
   }
-
-  .copyright__logo svg {
-    width: 40px;
-    height: 47px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .copyright {
     justify-content: flex-end;
+  }
+
+  .copyright__logo svg {
+    width: 40px;
+    height: 47px;
   }
 }
