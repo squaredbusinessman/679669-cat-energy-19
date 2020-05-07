@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 
-.dealer__wrapper {
+.dealer__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +64,7 @@
     width: 768px;
   }
 
-  .dealer__wrapper {
+  .dealer__block {
     width: 630px;
     padding-top: 64px;
     padding-bottom: 56px;
@@ -105,11 +105,16 @@
   }
 
   .dealer__bg-container {
-    position: relative;
     width: 100%;
   }
 
   .dealer__wrapper {
+    width: 1220px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .dealer__block {
     position: absolute;
     z-index: 1;
 

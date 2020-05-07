@@ -1,3 +1,5 @@
+/*Нормалайз*/
+@import "normalize/import-now";
 /*Шрифты*/
 @import "fonts.scss";
 /*Переменные*/
@@ -23,9 +25,9 @@
 @import "blocks/index_blocks/advantages.scss";
 @import "blocks/index_blocks/instruction.scss";
 @import "blocks/index_blocks/example.scss";
+@import "blocks/index_blocks/slider.scss";
 @import "blocks/index_blocks/living_example.scss";
 @import "blocks/index_blocks/result.scss";
-@import "blocks/index_blocks/compare.scss";
 /*Блоки Catalog*/
 @import "blocks/catalog_blocks/catalog_main.scss";
 @import "blocks/catalog_blocks/product.scss";

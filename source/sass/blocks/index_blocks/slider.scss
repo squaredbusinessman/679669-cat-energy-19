@@ -1,0 +1,123 @@
+@media (min-width: $tablet-width) {
+  .slider {}
+
+  .slider__bg {
+    height: 241px;
+  }
+
+  .slider__grid {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+    margin: 0 auto;
+
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 50vw;
+      height: 100%;
+      background-image: linear-gradient($gray--lightest 170px, $gray--lightest 632px);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: -2;
+      top: 0;
+      right: 0;
+      width: 50vw;
+      height: 100%;
+      background-image: linear-gradient($gray--bg-slider 170px, $gray--bg-slider 632px);
+    }
+  }
+
+  .slider__list {
+    @include list-reset;
+
+    position: relative;
+    width: 676px;
+    height: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+  }
+
+  .slider__item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border: 1px solid red;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.3;
+      z-index: 1;
+    }
+
+    &-upper-slide {
+      z-index: -1;
+      right: 0;
+
+      &::before {
+        background-color: blue;
+      }
+    }
+
+    &-lower-slide {
+      z-index: 1;
+      right: 50%;
+
+      &::before {
+        background-color: red;
+      }
+    }
+  }
+
+  .slider__img {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 200px;
+
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--upper {}
+
+    &--lower {}
+  }
+
+  .slider__controls {}
+
+  .slider__buttons {}
+
+  .slider__description {
+    @include font-styles(16px, normal, 20px, left, uppercase);
+    font-family: $default-font;
+    border: none;
+
+    background-color: $gray--lightest;
+
+    &--upper {}
+
+    &--lower {}
+  }
+
+  .slider__range-filter {}
+
+  .slider__range-line {}
+}

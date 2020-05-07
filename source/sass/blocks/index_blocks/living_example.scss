@@ -24,14 +24,14 @@
 
   .living-example__title {
     width: 708px;
-    margin: 43px auto 46px;
+    margin: 45px auto 50px;
 
     @include font-styles(60px, normal, 60px, left, none);
   }
 
   .living-example__phrase {
     width: 99%;
-    margin-bottom: 65px;
+    margin-bottom: 48px;
     font-family: $phrase_description-font;
     color: $gray--darkest;
 
@@ -40,6 +40,7 @@
 
   .living-example__result-wrapper {
     width: 100%;
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,10 +57,6 @@
 
   .living-example__compare {
     width: 768px;
-    display: flex;
-    flex-direction: column;
-
-    background: linear-gradient(to right, $gray--lightest 50%, $gray--dark 50%);
   }
 }
 
