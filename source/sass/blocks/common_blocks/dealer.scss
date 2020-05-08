@@ -1,5 +1,22 @@
 .dealer {
   width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 210px;
+    left: 136px;
+    z-index: 2;
+
+    width: 124px;
+    height: 106px;
+
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .dealer__bg-container {
@@ -59,6 +76,12 @@
   @include font-styles(14px, normal, 20px, left, none);
 }
 
+.dealer__iframe-map {
+  width: 100%;
+  position: absolute;
+  top: 111px;
+}
+
 @media (min-width: $tablet-width) {
   .dealer__bg-container {
     width: 768px;
@@ -94,6 +117,10 @@
     margin-top: 15px;
 
     @include font-styles(16px, normal, 20px, right, none);
+  }
+
+  .dealer__iframe-map {
+    top: 198px;
   }
 }
 

@@ -55,16 +55,12 @@
     height: 257px;
   }
 
-  .living-example__compare {
+  .living-example__slider {
     width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .living-example__mobile {
-    @include visually-hidden;
-  }
-
   .living-example {
     width: 1220px;
     height: 620px;
@@ -78,16 +74,19 @@
     border: none;
   }
 
+  .living-example__title {
+    width: 325px;
+    height: 61px;
+    margin: 0;
+    order: 1;
+  }
+
   .living-example__text-content {
     width: 50%;
     margin: 0;
+    order: 3;
 
     background-color: $gray--lightest;
-  }
-
-  .living-example__title {
-    width: 1220px;
-    margin: 25px auto 74px;
   }
 
   .living-example__phrase {
@@ -105,10 +104,8 @@
     @include visually-hidden;
   }
 
-  .living-example__compare {
-    justify-content: flex-end;
-    width: 45%;
-    margin: 0 auto 0 0;
-    padding: 0;
+  .living-example__slider {
+    width: auto;
+    order: 2;
   }
 }

@@ -107,56 +107,62 @@
     margin-bottom: 28px;
   }
 
-  .example__button {
-    margin: 0 auto 36px;
-    display: flex;
-  }
-
-  .example__radio-list {
-    @include list-reset;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 61%;
+  .example__controls {
+    position: relative;
+    z-index: 10;
     margin: 0 auto;
+    padding: 25px 20px;
   }
 
-  .example__radio-item label {
+  .example__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .example__range {
+    position: relative;
+    z-index: 10;
+  }
+
+  .example__range-line {
+    display: flex;
+    width: 82px;
+    background-color: $white;
+    height: 6px;
+    border: 1px solid $gray;
+    border-radius: 5px;
+  }
+
+  .example__range-btn {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: 2px;
+    width: 35px;
+    height: 4px;
+    background-color: $green;
+    border: none;
+    border-radius: 5px;
+
+    &--click {
+      position: absolute;
+      content: "";
+      top: 2px;
+      left: 46px;
+      width: 35px;
+      height: 4px;
+      background-color: $green;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+  .example__phrase {
     font-family: $default-font;
     color: $black;
+    border: none;
+    background-color: transparent;
 
     @include font-styles(16px, normal, 20px, left, uppercase);
-  }
-
-  .example__toggle {
-    position: relative;
-    background: $white;
-    width: 84px;
-    height: 14px;
-    border-radius: 15px;
-    cursor: pointer;
-    border: 1px solid $gray--dark;
-  }
-
-  .example__radio-range {
-    width: 84px;
-    height: 14px;
-
-    background-color: $white;
-    border-top: 1px solid $gray--dark;
-    border-left: 1px solid $gray--dark;
-    border-bottom: 1px solid $gray--dark;
-    border-radius: 15px;
-  }
-
-  .example__radio-input {
-    width: 35px;
-    height: 6px;
-    margin-top: 4px;
-    margin-left: 8px;
-
-    background-color: $green;
-    border-radius: 15px;
   }
 }
