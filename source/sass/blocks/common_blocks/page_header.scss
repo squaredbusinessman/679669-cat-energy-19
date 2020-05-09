@@ -10,6 +10,8 @@
 }
 
 .page-header__logo {
+  cursor: pointer;
+
   &:hover {
     opacity: 0.8;
   }
@@ -24,7 +26,7 @@
   height: 39px;
 
   margin-top: 8px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   margin-left: 20px;
 }
 

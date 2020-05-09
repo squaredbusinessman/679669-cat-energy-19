@@ -71,7 +71,7 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    height: 814px; /*для сетки, потому что пока без контентных изображений для планшета и десктопа*/
+    position: static;
 
     &::after {
       display: none;
@@ -85,8 +85,9 @@
   }
 
   .promo__wrapper {
+    position: relative;
     width: 620px;
-    margin-top: 12px;
+    margin-top: 13px;
     margin-left: 87px;
 
     background-image: none;
@@ -101,7 +102,7 @@
   }
 
   .promo__phrase {
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     padding: 0;
 
     @include font-styles(20px, normal, 20px, left, uppercase);
@@ -110,10 +111,19 @@
 
   .promo__picture-wrapper {
     position: absolute;
+    z-index: -1;
+    top: 28%;
+    left: -14.5%;
+  }
+
+  .promo__picture {
+    width: 709px;
+    height: 609px;
   }
 
   .promo__button {
     width: 221px;
+    margin-bottom: 510px;
     padding: 15px 12px;
 
     @include font-styles(20px, normal, 20px, center, uppercase);
@@ -132,21 +142,25 @@
   }
 
   .promo__wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 82px;
     margin-left: 80px;
   }
 
   .promo__header {
-    width: 70%;
+    width: 35%;
   }
 
   .promo__phrase {
+    width: 35%;
     margin-bottom: 54px;
   }
 
   .promo__picture-wrapper {
-    top: -45px;
-    right: 414px;
+    top: -18%;
+    left: 30.3%;
   }
 
   .promo__picture {
@@ -157,6 +171,7 @@
   }
 
   .promo__button {
-    width: 20%;
+    width: 18%;
+    margin-bottom: 0;
   }
 }
