@@ -55,7 +55,6 @@
   color: $black;
 
   @include font-styles(16px, normal, 20px, left, uppercase);
-
 }
 
 .dealer__address {
@@ -132,6 +131,7 @@
   .dealer__title {
     margin-left: 35px;
   }
+
   .dealer__address {
     margin-left: 20px;
     font-size: 16px;

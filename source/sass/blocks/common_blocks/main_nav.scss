@@ -27,7 +27,7 @@
 }
 
 @media (max-width: $mobile-only-width) {
-  .main-nav--closed .main-nav__burger::before  {
+  .main-nav--closed .main-nav__burger::before {
     content: "";
 
     position: absolute;
@@ -42,7 +42,8 @@
   }
 
   .main-nav--opened .main-nav__burger {
-    &::before, &::after {
+    &::before,
+    &::after {
       content: "";
 
       position: absolute;
@@ -59,6 +60,7 @@
       transform: rotate(45deg);
       box-shadow: none;
     }
+
     &::after {
       transform: rotate(-45deg);
       box-shadow: none;
