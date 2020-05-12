@@ -10,8 +10,8 @@
     left: calc(50% - 20px);
     z-index: 2;
 
-    width: 55px;
-    height: 53px;
+    width: auto;
+    height: auto;
 
     background-image: url("../img/map-pin.png");
     background-repeat: no-repeat;
@@ -19,11 +19,7 @@
   }
 }
 
-.dealer__bg-container {
-  width: 320px;
-  margin: 0 auto;
-  overflow: hidden;
-
+.dealer__container {
   display: flex;
   flex-direction: column;
 }
@@ -76,10 +72,29 @@
   @include font-styles(14px, normal, 20px, left, none);
 }
 
-.dealer__iframe-map {
+.dealer__map {
+  position: relative;
+}
+
+.dealer__map-api {
   width: 100%;
+  height: 400px;
   position: absolute;
-  top: 111px;
+  top: 0;
+}
+
+.dealer__map-wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+
+.dealer__map-picture {}
+
+@media (min-width: $mobile-only-width) {
+  .dealer__map {
+    height: 360px;
+  }
 }
 
 @media (min-width: $tablet-width) {

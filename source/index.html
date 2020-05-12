@@ -160,8 +160,8 @@
 
     <section class="living-example">
       <div class="living-example__center">
-        <h2 class="living-example__title">Живой пример</h2>
         <div class="living-example__text-content">
+          <h2 class="living-example__title">Живой пример</h2>
           <p class="living-example__phrase">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
             Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="living-example__result-wrapper">
@@ -193,7 +193,7 @@
                 <picture>
                   <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                  <img class="slider__img slider__img--upper" width="320" height="232" src="img/before-mobile@1x.png"
+                  <img class="slider__img slider__img--upper" width="320" height="240" src="img/before-mobile@1x.png"
                        srcset="img/before-mobile@2x.png 2x" alt="Пышный кот">
                 </picture>
               </li>
@@ -201,7 +201,7 @@
                 <picture>
                   <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                  <img class="slider__img slider_img--lower" src="img/after-mobile@1x.png" width="320" height="232"
+                  <img class="slider__img slider_img--lower" src="img/after-mobile@1x.png" width="320" height="240"
                        srcset="img/after-mobile@2x.png 2x" alt="Худой кот">
                 </picture>
               </li>
@@ -223,7 +223,7 @@
     </section>
 
     <section class="dealer dealer--index">
-      <div class="dealer__bg-container">
+      <div class="dealer__container">
         <div class="dealer__wrapper">
           <div class="dealer__block">
             <h2 class="dealer__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
@@ -233,19 +233,17 @@
             </div>
           </div>
         </div>
-        <div class="map__wrapper map__wrapper-index" id="map">
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-            <img class="map__picture" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320"
-                 height="400" alt="Карта расположения компании">
-          </picture>
+        <div class="dealer__map">
+          <div class="dealer__map-wrapper">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img class="dealer__map-picture" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320"
+                   height="400" alt="Карта расположения компании">
+            </picture>
+          </div>
+          <div class=" dealer__map-api" id="map"></div>
         </div>
-      </div>
-      <div class="dealer__iframe-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003006!2d30.32085871595745!3d59.938719169054345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588884152874!5m2!1sru!2sru"
-                width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-        </iframe>
       </div>
     </section>
   </main>
@@ -303,6 +301,8 @@
 
   <script src="js/mobile-nav-menu.js"></script>
   <script src="js/living-example-compare.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=a32c6723-9819-412d-9f3b-58cd47c1aaa9&lang=ru_RU" type="text/javascript"></script>
+  <script src="js/map.js"></script>
 
 </body>
 </html>

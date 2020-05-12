@@ -54,6 +54,7 @@
     left: 0;
     right: 0;
     border: 1px solid red;
+    overflow: hidden;
 
     &::before {
       position: absolute;
@@ -66,34 +67,35 @@
       z-index: 1;
     }
 
-    &-upper-slide {
+    &-lower-slide {
       z-index: -1;
       right: 0;
-
-      &::before {
-        background-color: blue;
-      }
     }
 
-    &-lower-slide {
+    &-upper-slide {
       z-index: 1;
       right: 50%;
-
-      &::before {
-        background-color: red;
-      }
     }
   }
 
   .slider__img {
     position: absolute;
     display: block;
+    max-width: unset;
     width: 690px;
     height: 517px;
 
     background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
+
+    &--upper {
+      left: -30px;
+    }
+
+    &--lower {
+      left: -30px;
+    }
   }
 
   .slider__controls {
@@ -166,5 +168,9 @@
 
   .slider__list {
     margin-top: -30px;
+  }
+
+  .slider__range-line {
+    background-color: $gray--progress-bar;
   }
 }

@@ -166,6 +166,7 @@
 @media (min-width: $desktop-width) {
   .instruction {
     margin-bottom: 0;
+    border-bottom: none;
   }
 
   .instruction__wrapper {
