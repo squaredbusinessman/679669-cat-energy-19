@@ -29,7 +29,12 @@
 
 @media (min-width: $desktop-width) {
   .copyright {
+    width: 165px;
     justify-content: flex-end;
+  }
+
+  .copyright__name {
+    margin-right: 8px;
   }
 
   .copyright__logo svg {

@@ -133,23 +133,23 @@
       </form>
     </section>
 
-    <section class="dealer dealer--form">
-      <div class="dealer__bg-container">
-        <div class="dealer__wrapper">
-          <h2 class="dealer__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
-          <div class="dealer__location">
-            <p class="dealer__address">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="dealer__city">Санкт-Петербург</p>
-          </div>
-        </div>
-        <div class="map__wrapper map__wrapper-index" id="map">
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-            <img class="map__picture" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320"
-                 height="400" alt="Карта расположения компании">
-          </picture>
-        </div>
+    <section class="dealer">
+      <div class="dealer__inner dealer__inner--index dealer__container">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="dealer__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+        <address class="dealer__address">
+          <span class="dealer__street">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="dealer__city">Санкт-Петербург</span>
+        </address>
+      </div>
+      <div class="dealer__map">
+        <div class="dealer__map-api" id="map"></div>
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@1x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img src="img/bg-map-mobile@1x.png"
+               srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Карта расположения компании">
+        </picture>
       </div>
     </section>
   </main>
@@ -206,6 +206,8 @@
   </footer>
 
   <script src="js/mobile-nav-menu.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=a32c6723-9819-412d-9f3b-58cd47c1aaa9&lang=ru_RU" type="text/javascript"></script>
+  <script src="js/map.js"></script>
 
 </body>
 </html>

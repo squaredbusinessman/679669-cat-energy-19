@@ -1,203 +1,140 @@
 .dealer {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: calc(50% - 10px);
-    left: calc(50% - 20px);
-    z-index: 2;
-
-    width: auto;
-    height: auto;
-
-    background-image: url("../img/map-pin.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-}
-
-.dealer__container {
-  display: flex;
-  flex-direction: column;
-}
-
-.dealer__block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 280px;
-  margin: 0 auto;
-  padding: 24px 20px;
-}
-
-.dealer__title {
-  width: 45%;
-  margin: 6px 0 0;
-
-  color: $title-clr;
-
-  @include font-styles(16px, normal, 20px, left, uppercase);
-}
-
-.dealer--index .dealer__title {
-  margin-top: 3px;
-}
-
-.dealer__location {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 50%;
   margin: 0;
-}
-
-.dealer__address {
-  margin: 0;
-
-  font-family: $phrase_description-font;
-  color: $phrase-clr;
-
-  @include font-styles(14px, normal, 20px, left, none);
-}
-
-.dealer__city {
-  margin: 0;
-
-  font-family: $phrase_description-font;
-  color: $phrase-clr;
-
-  @include font-styles(14px, normal, 20px, left, none);
 }
 
 .dealer__map {
   position: relative;
+  width: 100%;
+  height: 400px;
+  margin: -38px auto 0;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: 5;
+    width: 55px;
+    height: 53px;
+    left: 132px;
+    top: 181px;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.dealer__map img {
+  width: 320px;
+  margin: 0 auto;
+  height: 400px;
+  margin-top: 40px;
 }
 
 .dealer__map-api {
-  width: 100%;
-  height: 400px;
+  display: block;
   position: absolute;
-  top: 0;
-}
-
-.dealer__map-wrapper {
-  width: 320px;
+  z-index: 10;
+  width: 100%;
+  height: inherit;
   margin: 0 auto;
+  top: 38px;
 }
 
+.dealer__inner {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-.dealer__map-picture {}
+.dealer__title {
+  width: 50%;
+  font-family: $default-font;
+  color: $black;
 
-@media (min-width: $mobile-only-width) {
-  .dealer__map {
-    height: 360px;
-  }
+  @include font-styles(16px, normal, 20px, left, uppercase);
+
+}
+
+.dealer__address {
+  width: 50%;
+  font-family: $phrase_description-font;
+  color: $phrase-clr;
+
+  @include font-styles(14px, normal, 20px, left, none);
 }
 
 @media (min-width: $tablet-width) {
-  .dealer__bg-container {
-    width: 768px;
+  .dealer__map {
+    margin-top: 0;
+
+    &::before {
+      width: 113px;
+      height: 106px;
+      left: calc(50% - 55px);
+      top: calc(50% - 43px);
+    }
   }
 
-  .dealer__block {
-    width: 630px;
-    padding-top: 64px;
-    padding-bottom: 56px;
-    margin: 0 auto;
+  .dealer__map-api {
+    top: 0;
+  }
+
+  .dealer__inner {
+    width: 628px;
+    padding: 60px 40px;
   }
 
   .dealer__title {
-    width: 30%;
-    margin: 0;
-
-    @include font-styles(20px, normal, 25px, left, uppercase);
-  }
-
-  .dealer__location {
-    width: 30%;
-    margin: 0;
+    width: 40%;
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .dealer__address {
-    margin: 0;
-
-    @include font-styles(16px, normal, 20px, right, none);
+    width: 30%;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
   }
 
-  .dealer__city {
-    width: 100%;
-    margin-top: 15px;
-
-    @include font-styles(16px, normal, 20px, right, none);
-  }
-
-  .dealer__iframe-map {
-    top: 198px;
+  .dealer__street {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .dealer {
-    display: flex;
-    justify-content: flex-start;
-    padding: 0;
-  }
-
-  .dealer__bg-container {
-    width: 100%;
-  }
-
-  .dealer__wrapper {
-    width: 1220px;
     position: relative;
-    margin: 0 auto;
   }
 
-  .dealer__block {
+  .dealer__map {
+    &::before {
+      left: calc(50% + 247px);
+    }
+  }
+
+  .dealer__inner {
     position: absolute;
-    z-index: 1;
-
-    top: 24%;
-    left: 9.7%;
-
+    z-index: 100;
     width: 570px;
-    justify-content: flex-start;
-    margin: 0;
-    padding: 57px 0;
-
+    padding: 45px 0;
+    top: 95px;
+    justify-content: unset;
+    left: calc(50% - 570px);
     background-color: $white;
   }
 
   .dealer__title {
-    width: 154px;
-    margin: 0 95px 0 75px;
+    margin-left: 35px;
   }
-
-  .dealer__title--index {
-    margin-top: 7px;
-  }
-
-  .dealer__location {
-    align-items: baseline;
-    width: 163px;
-  }
-
-  .dealer__location--index {
-    margin-top: 0;
-  }
-
   .dealer__address {
-    margin-top: 7px;
-    margin-right: 0;
-    margin-bottom: 5px;
-
-    text-align: left;
-  }
-
-  .dealer__city {
+    margin-left: 20px;
+    font-size: 16px;
     text-align: left;
   }
 }

@@ -170,7 +170,20 @@
     margin-top: -30px;
   }
 
+  .slider__buttons {
+    margin: 0;
+  }
+
+  .slider__range-filter {
+    margin: 0 21px;
+  }
+
   .slider__range-line {
+    width: 426px;
     background-color: $gray--progress-bar;
+  }
+
+  .slider__controls {
+    margin-top: 40px;
   }
 }
