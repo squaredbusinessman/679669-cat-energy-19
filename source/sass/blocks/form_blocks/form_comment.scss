@@ -52,9 +52,9 @@
       content: "";
       position: absolute;
       top: 22px;
-      left: -69px;
+      right: 317%;
 
-      width: 30px;
+      width: 300%;
       height: 3px;
 
       background-color: $green;
@@ -62,9 +62,9 @@
 
     &::after {
       top: 22px;
-      right: -519px;
+      right: -326%;
 
-      width: 479px;
+      width: 300%;
     }
   }
 

@@ -90,9 +90,9 @@
       content: "";
       position: absolute;
       top: 23px;
-      left: -69px;
+      left: -206%;
 
-      width: 30px;
+      width: 200%;
       height: 3px;
 
       background-color: $green;
@@ -100,9 +100,9 @@
 
     &::after {
       top: 22px;
-      right: -69px;
+      left: 88%;
 
-      width: 31px;
+      width: 3000%;
     }
   }
 

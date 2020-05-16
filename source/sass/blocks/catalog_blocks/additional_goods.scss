@@ -60,7 +60,7 @@
 .additional-goods__description {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 .additional-goods__pack {
@@ -104,7 +104,7 @@
   .additional-goods__title {
     width: 50%;
     position: relative;
-    margin-bottom: 77px;
+    margin-bottom: 80px;
     margin-left: 37px;
 
     @include font-styles(36px, normal, 36px, left, none);
@@ -113,9 +113,9 @@
       content: "";
       position: absolute;
       top: 22px;
-      right: 710px;
+      left: -748px;
 
-      width: 30px;
+      width: 200%;
       height: 3px;
 
       background-color: $green;
@@ -125,9 +125,9 @@
       content: "";
       position: absolute;
       top: 22px;
-      right: -198px;
+      left: 106%;
 
-      width: 495px;
+      width: 300%;
       height: 3px;
 
       background-color: $green;
@@ -196,13 +196,13 @@
     margin-left: 0;
 
     &::before {
-      right: 112%;
-      width: 500px;
+      left: -306%;
+      width: 300%;
     }
 
     &::after {
-      right: -307%;
-      width: 1000px;
+      left: 61%;
+      width: 300%;
     }
   }
 

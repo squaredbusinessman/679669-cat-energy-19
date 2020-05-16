@@ -126,7 +126,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     width: 708px;
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   .advantages__item {
@@ -135,7 +135,7 @@
     align-items: flex-start;
 
     &:first-child {
-      margin-bottom: 34px;
+      margin-bottom: 30px;
     }
   }
 
@@ -204,8 +204,14 @@
     @include font-styles(20px, normal, 20px, left, uppercase);
 
     &::after {
-      top: 23px;
+      top: 24px;
       left: 130px;
+    }
+  }
+
+  .advantages__item--weight-gain > .advantages__link {
+    &::after {
+      left: 125px;
     }
   }
 }

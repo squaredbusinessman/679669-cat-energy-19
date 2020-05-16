@@ -111,7 +111,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 325px;
-    margin-top: 71px;
+    margin-top: 70px;
 
     &:last-child {
       margin-right: 0;
@@ -146,13 +146,13 @@
 
   .instruction__item--background-image {
     width: 80px;
-    height: 81px;
-    margin-bottom: 31px;
+    height: 80px;
+    margin-bottom: 33px;
   }
 
   .instruction__item--background-image rect {
     width: 80px;
-    height: 81px;
+    height: 80px;
   }
 
   .instruction__description {
@@ -179,9 +179,11 @@
 
   .instruction__item {
     width: 21%;
+    margin-bottom: 0;
 
     &:last-child {
       width: 20%;
+
     }
   }
 
