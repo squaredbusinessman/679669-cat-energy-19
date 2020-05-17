@@ -77,9 +77,9 @@
       content: "";
       position: absolute;
       top: 23px;
-      left: -69px;
+      left: -673px;
 
-      width: 30px;
+      width: 300%;
       height: 3px;
 
       background-color: $green;
@@ -87,9 +87,9 @@
 
     &::after {
       top: 23px;
-      right: -488px;
+      right: -520%;
 
-      width: 445px;
+      width: 500%;
     }
   }
 
@@ -137,9 +137,9 @@
       content: "";
       position: absolute;
       top: 23px;
-      left: -110px;
+      left: -674px;
 
-      width: 70px;
+      width: 300%;
       height: 3px;
 
       background-color: $green;
@@ -149,7 +149,7 @@
       top: 23px;
       right: -1119px;
 
-      width: 1078px;
+      width: 800%;
     }
   }
 

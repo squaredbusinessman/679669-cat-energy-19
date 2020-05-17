@@ -52,7 +52,7 @@
       content: "";
       position: absolute;
       top: 22px;
-      right: 317%;
+      right: 220px;
 
       width: 300%;
       height: 3px;
@@ -62,9 +62,9 @@
 
     &::after {
       top: 22px;
-      right: -326%;
+      right: -521%;
 
-      width: 300%;
+      width: 500%;
     }
   }
 
@@ -80,7 +80,7 @@
 
 @media (min-width: $desktop-width) {
   .form-comment {
-    margin-bottom: 66px;
+    margin-bottom: 65px;
   }
 
   .form-comment__title {
@@ -88,9 +88,8 @@
       content: "";
       position: absolute;
       top: 22px;
-      left: -110px;
 
-      width: 70px;
+      width: 300%;
       height: 3px;
 
       background-color: $green;
@@ -98,9 +97,9 @@
 
     &::after {
       top: 22px;
-      right: -1150px;
+      right: -1488px;
 
-      width: 1112px;
+      width: 800%;
     }
   }
 

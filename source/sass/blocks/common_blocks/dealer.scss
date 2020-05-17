@@ -140,7 +140,7 @@
     position: absolute;
     z-index: 100;
     width: 570px;
-    padding: 44px 0;
+    padding: 0;
     top: 91px;
     justify-content: unset;
     left: calc(50% - 610px);
@@ -149,10 +149,7 @@
 
   .dealer__inner--index {
     margin: 0;
-  }
-
-  .dealer__inner-catalog {
-    padding: 0;
+    padding: 44px 0;
   }
 
   .dealer__title {

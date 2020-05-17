@@ -48,7 +48,7 @@
 .form__profile {
   display: flex;
   flex-direction: column;
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   padding: 0;
 
   border: none;
@@ -58,7 +58,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
+  margin-top: 2px;
+  margin-bottom: 15px;
 }
 
 .form__label-common {
@@ -114,7 +115,7 @@
 }
 
 .form__footnote {
-  margin-top: 17px;
+  margin-top: 22px;
 
   font-family: $phrase_description-font;
   color: $gray--darkest;
@@ -124,8 +125,8 @@
 
 @media (min-width: $tablet-width) {
   .form__main {
-    margin-top: 37px;
-    margin-bottom: 73px;
+    margin-top: 40px;
+    margin-bottom: 0;
   }
 
   .form__title-wrapper {
@@ -149,7 +150,7 @@
 
   .form__phrase {
     width: 50%;
-    margin-bottom: 62px;
+    margin-bottom: 60px;
     padding-left: 40px;
 
     @include font-styles(20px, normal, 30px, left, uppercase);
@@ -188,8 +189,8 @@
   }
 
   .form__profile-input {
-    padding-top: 14px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 15px;
     padding-left: 19px;
   }
 
@@ -226,7 +227,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 74px;
-    margin-bottom: 81px;
+    margin-bottom: 12px;
   }
 
   .form__title-wrapper {
@@ -250,14 +251,10 @@
     padding-bottom: 15px;
   }
 
-  .form__profile-grid {
-    margin-bottom: 20px;
-  }
-
   .form__phrase {
     width: 56%;
     padding-left: 0;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   .form__field {
@@ -284,7 +281,7 @@
 
   .form__wrapper {
     width: 46.5%;
-    margin: 0 0 70px;
+    margin: 0 0 66px;
   }
 
   .form-field__container {
