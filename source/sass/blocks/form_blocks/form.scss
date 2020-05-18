@@ -69,6 +69,8 @@
   color: $black--lighter;
 
   @include font-styles(16px, normal, 18px, left, uppercase);
+
+
 }
 
 .form__profile-label-name + .form__profile-input {
@@ -97,6 +99,26 @@
   padding-left: 13px;
 
   appearance: none;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+    border-color: $gray--darkest;
+  }
+
+  &:invalid {
+    color: #ff8282;
+    opacity: 1;
+  }
+}
+
+.form__input-common[placeholder] {
+  color: $gray--darkest;
+  opacity: 1;
 }
 
 .form__wrapper {

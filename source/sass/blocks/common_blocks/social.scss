@@ -9,6 +9,18 @@
   margin-right: 38px;
 }
 
+.social-list__link svg {
+  &:hover {
+    path {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .social-list__link--vk svg {
   width: 22px;
   height: 12px;

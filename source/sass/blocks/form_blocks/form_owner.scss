@@ -48,6 +48,21 @@
   padding-left: 12px;
 
   border: 1px solid $gray--form-border;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 1;
+    border-color: $gray--darkest;
+  }
+
+  &:invalid {
+    color: #ff8282;
+    opacity: 1;
+  }
 }
 
 .form-owner__label-input-email {
@@ -61,6 +76,19 @@
 
 .form-owner__icon {
   position: absolute;
+
+  &:invalid {
+    path {
+      fill: #ff8282;
+    }
+  }
+
+  &:active,
+  &:focus {
+    path {
+      fill: #68b738;
+    }
+  }
 }
 
 .form-owner__icon--mail {

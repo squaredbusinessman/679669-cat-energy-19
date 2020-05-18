@@ -110,6 +110,14 @@
     border: none;
     border-bottom: 1px dotted $gray--darker;
     background-color: transparent;
+
+    &:hover {
+      border-bottom: 1px solid $gray--darker;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   .slider__range-filter {
@@ -144,6 +152,10 @@
     border-radius: 50%;
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
 
     &:active {
       box-shadow: 0 0 0 2px $green;

@@ -12,12 +12,34 @@
   @include font-styles(16px, normal, 16px, left);
 }
 
+.copyright__link svg {
+  &:hover {
+    path {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .copyright__logo svg {
   width: 40px;
   height: 47px;
 
   path {
     fill: $black;
+  }
+}
+
+.copyright__name {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 

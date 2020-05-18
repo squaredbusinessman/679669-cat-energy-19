@@ -36,6 +36,14 @@
     border: 1px solid $gray--form-border;
     border-radius: 50%;
   }
+
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .form-question__radio {
