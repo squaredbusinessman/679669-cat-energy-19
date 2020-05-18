@@ -135,10 +135,16 @@
       <div class="example__interactive-container">
         <div class="example__images">
           <div class="example__img-wrapper">
-            <img class="example__pic example__pic--before" width="320" height="240" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Пышный кот">
+            <picture>
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+              <img class="example__pic example__pic--before" width="320" height="240" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Пышный кот">
+            </picture>
           </div>
           <div class="example__img-wrapper visually-hidden">
-            <img class="example__pic example__pic--after" width="320" height="240" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Худой кот">
+            <picture>
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+              <img class="example__pic example__pic--after" width="320" height="240" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Худой кот">
+            </picture>
           </div>
         </div>
         <div class="example__controls">
