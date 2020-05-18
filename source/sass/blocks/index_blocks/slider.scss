@@ -78,7 +78,7 @@
     background-repeat: no-repeat;
 
     &--upper {
-      left: 0px;
+      left: 0;
     }
 
     &--lower {
@@ -172,6 +172,7 @@
       }
     }
   }
+
   .slider__img--lower {
     right: 100px;
   }
