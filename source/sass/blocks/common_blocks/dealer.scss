@@ -6,6 +6,10 @@
   background-color: $gray--lightest;
 }
 
+.dealer--form {
+  background-color: $gray--lightest;
+}
+
 
 .dealer__map {
   position: relative;
@@ -52,11 +56,6 @@
   align-items: center;
 }
 
-.dealer__inner--index {
-  margin-top: 12px;
-  margin-bottom: 10px;
-}
-
 .dealer__title {
   width: 50%;
   font-family: $default-font;
@@ -97,11 +96,6 @@
     width: 628px;
   }
 
-  .dealer__inner--index {
-    margin-top: 45px;
-    margin-bottom: 41px;
-  }
-
   .dealer__title {
     width: 37%;
     font-size: 20px;
@@ -109,6 +103,10 @@
 
     margin-top: 63px;
     margin-bottom: 68px;
+  }
+
+  .dealer__title-index {
+    margin-bottom: 63px;
   }
 
   .dealer__address {
@@ -149,7 +147,7 @@
 
   .dealer__inner--index {
     margin: 0;
-    padding: 44px 0;
+    top: 95px;
   }
 
   .dealer__title {

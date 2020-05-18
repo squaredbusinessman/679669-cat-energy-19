@@ -13,7 +13,7 @@
     flex-direction: column;
 
     @include center-container;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   .example__title {
@@ -26,7 +26,7 @@
 
   .example__description {
     width: 99%;
-    margin: 0 0 25px;
+    margin: 0 0 28px;
 
     @include font-styles(14px, normal, 18px, left, none);
     font-family: $phrase_description-font;

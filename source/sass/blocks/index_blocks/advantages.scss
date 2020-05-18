@@ -19,7 +19,7 @@
   background-color: $gray--lightest;
 
   &:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 }
 
@@ -83,7 +83,7 @@
 .advantages__description {
   @include indent-reset;
 
-  padding-bottom: 22px;
+  padding-bottom: 25px;
   font-family: $phrase_description-font;
   color: $phrase-clr;
 
@@ -135,7 +135,7 @@
     align-items: flex-start;
 
     &:first-child {
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
   }
 
