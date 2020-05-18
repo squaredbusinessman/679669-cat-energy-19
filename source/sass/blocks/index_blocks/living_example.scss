@@ -90,6 +90,7 @@
 @media (min-width: $desktop-width) {
   .living-example {
     margin-top: 30px;
+    background-image: linear-gradient($white 190px, $gray--lightest 160px);
 
     &::before {
       position: absolute;
@@ -105,12 +106,12 @@
     &::after {
       position: absolute;
       content: "";
-      z-index: -6;
+      z-index: 1;
       top: 0;
       right: 0;
       width: 25vw;
       height: 100%;
-      background-image: linear-gradient($white 160px, $gray--bg-slider 160px);
+      background-image: linear-gradient($white 190px, $gray--bg-slider 160px);
     }
   }
 
