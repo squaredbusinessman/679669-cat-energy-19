@@ -19,7 +19,7 @@
   display: block;
   width: 55%;
   margin-top: 21px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .card__title {
@@ -144,7 +144,7 @@
 
 @media (min-width: $desktop-width) {
   .card {
-    padding-bottom: 44px;
+    padding-bottom: 43px;
   }
 
   .card__background {
@@ -157,6 +157,9 @@
 
   .card__description-wrapper {
     width: 72.7%;
+    margin-top: 20px;
+    margin-bottom: 33px;
+    padding-top: 17px;
   }
 
   .card__link-title {
@@ -165,6 +168,10 @@
 
   .card__table {
     width: 97%;
+  }
+
+  .card__option {
+    padding-left: 3px;
   }
 
   .card__button {

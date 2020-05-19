@@ -1,7 +1,7 @@
 .promo {
   position: relative;
 
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   &::after {
     position: absolute;
@@ -38,7 +38,7 @@
 .promo__header {
   display: block;
   margin: 0 0 27px;
-  padding-top: 26px;
+  padding-top: 29px;
 
   color: $promo_text-clr;
 
@@ -77,7 +77,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     position: static;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 
     &::after {
       display: none;
@@ -94,21 +94,22 @@
     position: relative;
     width: 620px;
     margin-top: 13px;
-    margin-left: 87px;
+    margin-left: 88px;
 
     background-image: none;
   }
 
   .promo__header {
     width: 427px;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
+    padding-top: 28px;
 
     @include font-styles(60px, normal, 60px, left, none);
     color: $black;
   }
 
   .promo__phrase {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
     padding: 0;
 
     @include font-styles(20px, normal, 20px, left, uppercase);
@@ -118,7 +119,7 @@
   .promo__picture-wrapper {
     position: absolute;
     z-index: -1;
-    top: 28%;
+    top: 27.9%;
     left: -14.5%;
   }
 
@@ -130,7 +131,7 @@
   .promo__button {
     width: 221px;
     margin-bottom: 510px;
-    padding: 15px 12px;
+    padding: 16px 12px;
 
     @include font-styles(20px, normal, 20px, center, uppercase);
   }
@@ -139,7 +140,7 @@
 @media (min-width: $desktop-width) {
   .promo {
     height: auto;
-    margin-bottom: 270px;
+    margin-bottom: 268px;
   }
 
   .promo__container {
@@ -151,21 +152,22 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 82px;
+    margin-top: 80px;
     margin-left: 80px;
   }
 
   .promo__header {
     width: 35%;
+    margin-bottom: 41px;
   }
 
   .promo__phrase {
     width: 35%;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
   .promo__picture-wrapper {
-    top: -18%;
+    top: -16.5%;
     left: 30.3%;
   }
 

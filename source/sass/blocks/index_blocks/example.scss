@@ -26,7 +26,7 @@
 
   .example__description {
     width: 99%;
-    margin: 0 0 28px;
+    margin: 0 0 30px;
 
     @include font-styles(14px, normal, 18px, left, none);
     font-family: $phrase_description-font;
@@ -164,6 +164,7 @@
     color: $black;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 
     @include font-styles(16px, normal, 20px, left, uppercase);
 

@@ -10,7 +10,7 @@
 
     position: relative;
     width: 676px;
-    height: 632px;
+    min-height: 632px;
     margin: 0 auto;
   }
 
@@ -35,6 +35,7 @@
 
     &-lower-slide {
       background-image: linear-gradient($white 170px, $gray--bg-slider 170px, $gray--bg-slider 632px);
+      z-index: 8;
       right: 0;
 
       &::after {
@@ -169,11 +170,12 @@
   }
 
   .slider__list {
-    height: 653px;
+    min-height: 653px;
   }
 
   .slider__item {
     &-upper-slide {
+      right: 46%;
       background-image: linear-gradient($white 190px, $gray--lightest 170px, $gray--lightest 632px);
 
       &::before {
@@ -207,11 +209,8 @@
     background-color: $gray--progress-bar;
   }
 
-  .slider__range-btn {
-    left: 40%;
-  }
-
   .slider__controls {
+    top: 514px;
     right: -82px;
     margin-top: 40px;
   }

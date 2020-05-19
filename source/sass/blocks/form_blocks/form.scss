@@ -24,7 +24,7 @@
 }
 
 .form__title {
-  margin: 16px 0 25px;
+  margin: 15px 0 25px;
 
   font-family: $default-font;
   color: $black;
@@ -33,7 +33,7 @@
 }
 
 .form__phrase {
-  margin: 0 0 37px;
+  margin: 0 0 38px;
 
   font-family: $default-font;
   color: $black;
@@ -128,14 +128,15 @@
 
 .form__button {
   width: 100%;
-  padding-top: 9px;
-  padding-bottom: 11px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @include font-styles(16px, normal, 20px, center, uppercase);
 }
 
 .form__footnote {
   margin-top: 22px;
+  margin-left: 7px;
 
   font-family: $phrase_description-font;
   color: $gray--darkest;
@@ -154,7 +155,7 @@
   }
 
   .form__container {
-    width: 631px;
+    width: 625px;
   }
 
   .form__title-common {
@@ -209,9 +210,9 @@
   }
 
   .form__profile-input {
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 19px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 15px;
   }
 
   .form__wrapper {
@@ -278,7 +279,7 @@
   }
 
   .form__field {
-    width: 1220px;
+    width: 1218px;
     margin: 0 auto;
     padding: 0;
 

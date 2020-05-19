@@ -29,7 +29,7 @@
 
   .living-example__title {
     width: 708px;
-    margin: 42px auto 48px;
+    margin: 44px auto 48px;
 
     @include font-styles(60px, normal, 60px, left, none);
   }
@@ -89,7 +89,7 @@
 
 @media (min-width: $desktop-width) {
   .living-example {
-    margin-top: 30px;
+    margin-top: 29px;
     background-image: linear-gradient($white 190px, $gray--lightest 160px);
 
     &::before {
@@ -126,7 +126,7 @@
   }
 
   .living-example__title {
-    margin: 54px 0 76px;
+    margin: 54px 0 79px;
   }
 
   .living-example__text-content {
@@ -140,7 +140,7 @@
 
   .living-example__phrase {
     width: 100%;
-    margin-bottom: 38px;
+    margin-bottom: 32px;
   }
 
   .living-example__result-wrapper {

@@ -72,7 +72,15 @@
   .page-footer__wrapper {
     width: 708px;
     flex-direction: row;
-    padding-top: 50px;
+    padding-top: 48px;
+  }
+
+  .page-footer__wrapper-catalog {
+    padding-top: 45px;
+  }
+
+  .page-footer__wrapper-form {
+    padding-top: 45px;
   }
 
   .page-footer__logo {
@@ -100,10 +108,10 @@
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 1220px;
-    padding-top: 50px;
+    padding-top: 51px;
   }
 
   .page-footer__social-wrapper {
-    width: 13%;
+    width: 13.6%;
   }
 }

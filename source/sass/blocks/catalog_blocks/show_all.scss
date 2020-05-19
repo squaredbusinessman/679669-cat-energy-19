@@ -118,7 +118,7 @@
     width: 60%;
     margin: 26px auto 0;
 
-    @include font-styles(16px, normal, 18px, center, none);
+    @include font-styles(16px, normal, 19px, center, none);
   }
 
   .show-all__button {
@@ -134,7 +134,9 @@
 @media (min-width: $desktop-width) {
   .show-all {
     &::before {
+      top: 42%;
       left: 38%;
+      height: 3px;
     }
   }
 
@@ -146,6 +148,7 @@
   .show-all__wrapper {
     width: 97.2%;
     margin-top: 63%;
+    margin-left: 4px;
   }
 
   .show-all__title {

@@ -50,18 +50,26 @@
   border: 1px solid $gray--form-border;
   opacity: 0.5;
 
-  &:hover {
+  &:hover + svg {
     opacity: 0.8;
   }
 
-  &:focus {
+  &:focus + svg {
     opacity: 1;
     border-color: $gray--darkest;
+
+    path {
+      fill: #68b738;
+    }
   }
 
-  &:invalid {
+  &:invalid + svg {
     color: #ff8282;
     opacity: 1;
+
+    path {
+      fill: #ff8282;
+    }
   }
 }
 
@@ -76,19 +84,6 @@
 
 .form-owner__icon {
   position: absolute;
-
-  &:invalid {
-    path {
-      fill: #ff8282;
-    }
-  }
-
-  &:active,
-  &:focus {
-    path {
-      fill: #68b738;
-    }
-  }
 }
 
 .form-owner__icon--mail {
@@ -104,7 +99,7 @@
 @media (min-width: $tablet-width) {
   .form-owner__container {
     width: 630px;
-    margin-bottom: 70px;
+    margin-bottom: 71px;
   }
 
   .form-owner {
@@ -139,6 +134,10 @@
   .form-owner__grid {
     width: 630px;
     margin-bottom: 10px;
+  }
+
+  .form-owner__label {
+    margin-left: 2px;
   }
 
   .form-owner__label-input {

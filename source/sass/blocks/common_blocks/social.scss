@@ -1,7 +1,7 @@
 .social-list {
   display: flex;
   align-items: center;
-  padding-top: 21px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -10,6 +10,8 @@
 }
 
 .social-list__link svg {
+  cursor: pointer;
+
   &:hover {
     path {
       fill: #68b738;

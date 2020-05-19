@@ -18,7 +18,7 @@
     top: 54%;
     left: 82.2%;
 
-    width: 53px;
+    width: 200%;
     height: 3px;
     background-color: $green;
   }
@@ -236,6 +236,7 @@
   .additional-goods__description {
     width: 285px;
     margin: 0;
+    margin-top: 6px;
     justify-content: space-between;
   }
 
