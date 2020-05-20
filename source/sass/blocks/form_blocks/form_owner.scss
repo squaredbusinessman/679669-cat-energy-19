@@ -53,19 +53,13 @@
     color: #69b738;
     opacity: 1;
     border-color: $gray--darkest;
-
-    path {
-      fill: #68b738;
-    }
+    fill: $green;
   }
 
   &:invalid:focus + svg {
-    color: #ff8282;
+    color: $rose--red;
     opacity: 1;
-
-    path {
-      fill: #ff8282;
-    }
+    fill: $rose--red;
   }
 }
 
