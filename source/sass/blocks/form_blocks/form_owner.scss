@@ -48,13 +48,9 @@
   padding-left: 12px;
 
   border: 1px solid $gray--form-border;
-  opacity: 0.5;
 
-  &:hover + svg {
-    opacity: 0.8;
-  }
-
-  &:focus + svg {
+  &:valid + svg {
+    color: #69b738;
     opacity: 1;
     border-color: $gray--darkest;
 
@@ -63,7 +59,7 @@
     }
   }
 
-  &:invalid + svg {
+  &:invalid:focus + svg {
     color: #ff8282;
     opacity: 1;
 
