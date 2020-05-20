@@ -13,9 +13,7 @@
   cursor: pointer;
 
   &:hover {
-    path {
-      fill: #68b738;
-    }
+    fill: $green;
   }
 
   &:active {
@@ -35,14 +33,13 @@
 
 .social-list__link--fb svg {
   width: 10px;
-  height: 19px;
+  height: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .social-list {
     padding: 0;
     border: none;
-    align-items: unset;
   }
 
   .social-list__item {
