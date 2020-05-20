@@ -89,6 +89,10 @@
   border: 1px solid $gray--dark;
 
   @include font-styles(16px, normal, 18px, left, uppercase);
+
+  &::placeholder {
+    color: $black;
+  }
 }
 
 .form__profile-input {
