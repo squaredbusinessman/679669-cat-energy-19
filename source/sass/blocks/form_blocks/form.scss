@@ -91,7 +91,7 @@
   @include font-styles(16px, normal, 18px, left, uppercase);
 
   &::placeholder {
-    color: $black;
+    color: $gray--darkest;
   }
 }
 
