@@ -30,6 +30,10 @@ input {
   appearance: none;
 }
 
+address {
+  font-style: normal;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 

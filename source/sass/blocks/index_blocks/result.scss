@@ -58,11 +58,13 @@
 
 @media (min-width: $desktop-width) {
   .result {
-    margin-bottom: 55px;
+    margin-right: 73px;
+    margin-bottom: 67px;
   }
 
   .result__phrase {
-    background-color: $gray;
+    background-color: $gray--lightest;
+    transform: translate(0%, 80%);
   }
 
   .result__total-costs {

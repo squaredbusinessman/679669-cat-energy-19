@@ -27,7 +27,7 @@
 }
 
 @media (max-width: $mobile-only-width) {
-  .main-nav--closed .main-nav__burger::before  {
+  .main-nav--closed .main-nav__burger::before {
     content: "";
 
     position: absolute;
@@ -42,7 +42,8 @@
   }
 
   .main-nav--opened .main-nav__burger {
-    &::before, &::after {
+    &::before,
+    &::after {
       content: "";
 
       position: absolute;
@@ -59,13 +60,14 @@
       transform: rotate(45deg);
       box-shadow: none;
     }
+
     &::after {
       transform: rotate(-45deg);
       box-shadow: none;
     }
   }
 
-  .main-nav--closed .site-list__item {
+  .main-nav--closed .site-list {
     display: none;
   }
 
@@ -73,7 +75,7 @@
     display: none;
   }
 
-  .main-nav--nojs .site-list__item {
+  .main-nav--nojs .site-list {
     display: block;
   }
 }
@@ -92,7 +94,7 @@
   }
 
   .main-nav__burger {
-    display: none; /*лучше делать так или как на 55 строчке?*/
+    display: none;
   }
 }
 

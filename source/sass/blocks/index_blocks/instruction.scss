@@ -32,11 +32,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 3px;
+    left: 3px;
 
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
 
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -50,18 +50,33 @@
 .instruction__item--benefit {
   &::before {
     background-image: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+      background-size: contain;
+    }
   }
 }
 
 .instruction__item--simplicity {
   &::before {
     background-image: url("../img/advantage-powder@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+      background-size: contain;
+    }
   }
 }
 
 .instruction__item--change {
   &::before {
     background-image: url("../img/advantage-dining@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+      background-size: contain;
+    }
   }
 }
 
@@ -70,6 +85,11 @@
 
   &::before {
     background-image: url("../img/advantage-clock@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+      background-size: contain;
+    }
   }
 }
 
@@ -111,7 +131,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 325px;
-    margin-top: 71px;
+    margin-top: 70px;
 
     &:last-child {
       margin-right: 0;
@@ -146,13 +166,13 @@
 
   .instruction__item--background-image {
     width: 80px;
-    height: 81px;
-    margin-bottom: 31px;
+    height: 80px;
+    margin-bottom: 33px;
   }
 
   .instruction__item--background-image rect {
     width: 80px;
-    height: 81px;
+    height: 80px;
   }
 
   .instruction__description {
@@ -166,6 +186,7 @@
 @media (min-width: $desktop-width) {
   .instruction {
     margin-bottom: 0;
+    border-bottom: none;
   }
 
   .instruction__wrapper {
@@ -178,10 +199,21 @@
 
   .instruction__item {
     width: 21%;
+    margin-top: 72px;
+    margin-bottom: 0;
 
     &:last-child {
       width: 20%;
     }
+
+    &::before {
+      top: 13px;
+      left: 12px;
+    }
+  }
+
+  .instruction__item--background-image {
+    margin-bottom: 32px;
   }
 
   .instruction__description {

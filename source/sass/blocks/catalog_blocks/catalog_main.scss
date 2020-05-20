@@ -1,9 +1,14 @@
+.catalog-main {
+  overflow: hidden;
+}
+
 .catalog-main__title {
   @include center-container;
   @include font-styles(36px, normal, 60px, left);
   font-family: $default-font;
   color: $title-clr;
 
+  margin-top: 15px;
   margin-bottom: 27px;
 }
 
@@ -21,6 +26,6 @@
   .catalog-main__title {
     width: 1220px;
     margin-top: 75px;
-    margin-bottom: 74px;
+    margin-bottom: 25px;
   }
 }

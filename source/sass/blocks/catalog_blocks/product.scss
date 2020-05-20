@@ -28,7 +28,7 @@
 @media (min-width: $tablet-width) {
   .product {
     @include center-container;
-    margin-bottom: 60px;
+    margin-bottom: 68px;
 
     width: 708px;
     border: none;
@@ -55,6 +55,7 @@
 @media (min-width: $desktop-width) {
   .product {
     width: 1220px;
+    margin-bottom: 51px;
   }
 
   .product__list {
@@ -62,7 +63,7 @@
   }
 
   .product__item {
-    width: 16.8%;
+    width: 20.2%;
 
     &:nth-child(odd) {
       margin: 0;

@@ -13,9 +13,17 @@
 
 .site-list__link {
   display: block;
-  padding: 24px 0;
+  padding: 24px 0 21px;
 
   color: $title-clr;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

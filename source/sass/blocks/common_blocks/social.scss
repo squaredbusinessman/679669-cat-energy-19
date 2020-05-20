@@ -1,9 +1,26 @@
 .social-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-top: 21px;
+  padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.social-list__item {
+  margin-right: 38px;
+}
+
+.social-list__link svg {
+  cursor: pointer;
+
+  &:hover {
+    path {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social-list__link--vk svg {
@@ -25,10 +42,11 @@
   .social-list {
     padding: 0;
     border: none;
+    align-items: unset;
   }
 
   .social-list__item {
-    margin: 0;
+    margin-right: 28px;
   }
 
   .social-list__link--vk svg {

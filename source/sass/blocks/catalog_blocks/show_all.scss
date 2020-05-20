@@ -62,13 +62,25 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
+
+    &::before {
+      top: 42.5%;
+      left: 41%;
+      width: 60px;
+    }
+
+    &::after {
+      top: 37.5%;
+      width: 3px;
+      height: 56px;
+    }
   }
 
   .show-all__background {
     position: absolute;
     z-index: -1;
 
-    top: 26.5%;
+    top: 25.5%;
     left: 0;
 
     width: 320px;
@@ -84,8 +96,8 @@
   }
 
   .show-all__title {
-    width: 55%;
-    padding: 165px 0 0;
+    width: 50%;
+    padding: 147px 0 0;
 
     @include font-styles(20px, normal, 20px, center, uppercase);
 
@@ -103,41 +115,48 @@
   }
 
   .show-all__phrase {
-    width: 70%;
+    width: 60%;
     margin: 26px auto 0;
 
-    @include font-styles(16px, normal, 18px, center, none);
+    @include font-styles(16px, normal, 19px, center, none);
   }
 
   .show-all__button {
     margin: 86px auto 0;
     padding-bottom: 7px;
 
-    width: 86%;
+    width: 75%;
 
     @include font-styles(16px, normal, 20px, center, uppercase);
   }
 }
 
 @media (min-width: $desktop-width) {
+  .show-all {
+    &::before {
+      top: 42%;
+      left: 38%;
+      height: 3px;
+    }
+  }
+
   .show-all__background {
     width: 100%;
-
-    top: 18.4%;
-    left: -2%;
+    top: 25.7%;
   }
 
   .show-all__wrapper {
     width: 97.2%;
-    margin-top: 43%;
+    margin-top: 63%;
+    margin-left: 4px;
   }
 
   .show-all__title {
-    width: 90%;
+    width: 70%;
   }
 
   .show-all__phrase {
-    width: 100%;
+    width: 90%;
   }
 
   .show-all__button {

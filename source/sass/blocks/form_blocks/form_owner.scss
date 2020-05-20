@@ -3,7 +3,7 @@
 }
 
 .form-owner {
-  margin: 29px 0 13px;
+  margin: 28px 0 15px;
   padding: 0;
 
   border: none;
@@ -12,7 +12,7 @@
 .form-owner__title {
   position: relative;
   width: 63%;
-  margin-bottom: 31px;
+  margin-bottom: 35px;
   padding: 0;
 
   &::after {
@@ -48,10 +48,34 @@
   padding-left: 12px;
 
   border: 1px solid $gray--form-border;
+  opacity: 0.5;
+
+  &:hover + svg {
+    opacity: 0.8;
+  }
+
+  &:focus + svg {
+    opacity: 1;
+    border-color: $gray--darkest;
+
+    path {
+      fill: #68b738;
+    }
+  }
+
+  &:invalid + svg {
+    color: #ff8282;
+    opacity: 1;
+
+    path {
+      fill: #ff8282;
+    }
+  }
 }
 
 .form-owner__label-input-email {
   width: 204px;
+  margin-right: 18px;
 }
 
 .form-owner__label-input-tel {
@@ -75,24 +99,25 @@
 @media (min-width: $tablet-width) {
   .form-owner__container {
     width: 630px;
+    margin-bottom: 71px;
   }
 
   .form-owner {
     margin-top: 75px;
-    margin-bottom: 46px;
+    margin-bottom: 51px;
   }
 
   .form-owner__title {
     width: 100%;
-    margin-bottom: 73px;
+    margin-bottom: 70px;
 
     &::before {
       content: "";
       position: absolute;
       top: 23px;
-      left: -69px;
+      left: -206%;
 
-      width: 30px;
+      width: 200%;
       height: 3px;
 
       background-color: $green;
@@ -100,15 +125,19 @@
 
     &::after {
       top: 22px;
-      right: -69px;
+      left: 88%;
 
-      width: 31px;
+      width: 3000%;
     }
   }
 
   .form-owner__grid {
     width: 630px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
+  }
+
+  .form-owner__label {
+    margin-left: 2px;
   }
 
   .form-owner__label-input {
@@ -120,6 +149,16 @@
 
   .form-owner__label-input-email {
     width: 519px;
+  }
+
+  .form-owner__icon--mail {
+    top: 25px;
+    right: 17px;
+  }
+
+  .form-owner__icon--tel {
+    top: 22px;
+    right: 13px;
   }
 
   .form-owner__label-input-tel {
@@ -138,20 +177,20 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 0;
-    margin-bottom: 49px;
+    margin-bottom: 58px;
   }
 
   .form-owner__title {
     width: 42.8%;
-    margin-bottom: 72px;
+    margin-bottom: 76px;
 
     &::before {
       content: "";
       position: absolute;
       top: 23px;
-      left: -110px;
+      left: -1602px;
 
-      width: 70px;
+      width: 300%;
       height: 3px;
 
       background-color: $green;
@@ -159,14 +198,22 @@
 
     &::after {
       top: 22px;
-      right: -110px;
-
-      width: 775px;
+      left: 552px;
     }
+  }
+
+  .form-owner__block {
+    display: flex;
+    justify-content: space-between;
   }
 
   .form-owner__grid {
     width: 46.5%;
+  }
+
+  .form-owner__label-input {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .form-owner__label-input-email {

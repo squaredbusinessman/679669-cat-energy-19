@@ -1,40 +1,8 @@
 @media (min-width: $tablet-width) {
-  .slider {}
-
-  .slider__bg {
-    height: 241px;
-  }
-
   .slider__grid {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
     width: 100%;
-    margin: 0 auto;
-
-    /*&::before {
-      position: absolute;
-      content: "";
-      z-index: -1;
-      top: 0;
-      left: 0;
-      width: 50%;
-      height: 100%;
-      background-color: $gray--lightest;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      z-index: -2;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 100%;
-      background-color:$gray--bg-slider;
-    }*/
+    margin: 71px auto 0;
   }
 
   .slider__list {
@@ -42,9 +10,8 @@
 
     position: relative;
     width: 676px;
-    height: 517px;
-    margin-top: -169px;
-    overflow: hidden;
+    min-height: 632px;
+    margin: 0 auto;
   }
 
   .slider__item {
@@ -53,34 +20,50 @@
     bottom: 0;
     left: 0;
     right: 0;
-    border: 1px solid red;
+    overflow: hidden;
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       width: 100%;
       height: 100%;
       top: 0;
       left: 0;
-      opacity: 0.3;
+      opacity: 0.1;
       z-index: 1;
-    }
-
-    &-upper-slide {
-      z-index: -1;
-      right: 0;
-
-      &::before {
-        background-color: blue;
-      }
     }
 
     &-lower-slide {
-      z-index: 1;
+      background-image: linear-gradient($white 170px, $gray--bg-slider 170px, $gray--bg-slider 632px);
+      z-index: 8;
+      right: 0;
+
+      &::after {
+        position: absolute;
+        content: "";
+        z-index: -1;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient($white 170px, $gray--bg-slider 170px, $gray--bg-slider 632px);
+      }
+    }
+
+    &-upper-slide {
+      background-image: linear-gradient($white 170px, $gray--lightest 170px, $gray--lightest 632px);
+      z-index: 9;
       right: 50%;
 
       &::before {
-        background-color: red;
+        position: absolute;
+        content: "";
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient($white 170px, $gray--lightest 170px, $gray--lightest 632px);
       }
     }
   }
@@ -88,18 +71,28 @@
   .slider__img {
     position: absolute;
     display: block;
+    max-width: unset;
     width: 690px;
     height: 517px;
 
     background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
+
+    &--upper {
+      left: 0;
+    }
+
+    &--lower {
+      left: -30px;
+    }
   }
 
   .slider__controls {
+    position: absolute;
     width: 100%;
-    margin-top: 18px;
-    margin-bottom: 69px;
+    bottom: 70px;
+    z-index: 10;
   }
 
   .slider__buttons {
@@ -118,6 +111,14 @@
     border: none;
     border-bottom: 1px dotted $gray--darker;
     background-color: transparent;
+
+    &:hover {
+      border-bottom: 1px solid $gray--darker;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   .slider__range-filter {
@@ -153,6 +154,10 @@
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
     &:active {
       box-shadow: 0 0 0 2px $green;
     }
@@ -160,11 +165,53 @@
 }
 
 @media (min-width: $desktop-width) {
-  .slider__bg {
-    display: none;
+  .slider__grid {
+    margin-top: 0;
   }
 
   .slider__list {
-    margin-top: -30px;
+    min-height: 653px;
+  }
+
+  .slider__item {
+    &-upper-slide {
+      right: 46%;
+      background-image: linear-gradient($white 190px, $gray--lightest 170px, $gray--lightest 632px);
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &-lower-slide {
+      background-image: linear-gradient($white 190px, $gray--bg-slider 170px, $gray--bg-slider 632px);
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .slider__img--lower {
+    right: 100px;
+  }
+
+  .slider__buttons {
+    margin: 0;
+  }
+
+  .slider__range-filter {
+    margin: 0 21px;
+  }
+
+  .slider__range-line {
+    width: 426px;
+    background-color: $gray--progress-bar;
+  }
+
+  .slider__controls {
+    top: 514px;
+    right: -82px;
+    margin-top: 40px;
   }
 }

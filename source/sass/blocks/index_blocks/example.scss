@@ -13,7 +13,7 @@
     flex-direction: column;
 
     @include center-container;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   .example__title {
@@ -26,7 +26,7 @@
 
   .example__description {
     width: 99%;
-    margin: 0 0 25px;
+    margin: 0 0 30px;
 
     @include font-styles(14px, normal, 18px, left, none);
     font-family: $phrase_description-font;
@@ -104,19 +104,19 @@
   }
 
   .example__images {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
 
   .example__controls {
+    width: 203px;
     position: relative;
     z-index: 10;
-    margin: 0 auto;
-    padding: 25px 20px;
+    margin: 0 auto 36px;
   }
 
   .example__buttons {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
   }
 
@@ -127,20 +127,20 @@
 
   .example__range-line {
     display: flex;
-    width: 82px;
+    width: 84px;
     background-color: $white;
-    height: 6px;
+    height: 12px;
     border: 1px solid $gray;
-    border-radius: 5px;
+    border-radius: 10px;
   }
 
   .example__range-btn {
     position: absolute;
     content: "";
-    top: 2px;
-    left: 2px;
+    top: 4px;
+    left: 8px;
     width: 35px;
-    height: 4px;
+    height: 6px;
     background-color: $green;
     border: none;
     border-radius: 5px;
@@ -157,12 +157,23 @@
       border-radius: 5px;
     }
   }
+
   .example__phrase {
+    padding: 0;
     font-family: $default-font;
     color: $black;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 
     @include font-styles(16px, normal, 20px, left, uppercase);
+
+    &-before {
+      margin-right: 16px;
+    }
+
+    &-after {
+      margin-left: 17px;
+    }
   }
 }

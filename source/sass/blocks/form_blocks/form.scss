@@ -1,4 +1,8 @@
 .form {
+  overflow: hidden;
+}
+
+.form__main {
   margin-bottom: 32px;
 
   background-color: $white;
@@ -20,7 +24,7 @@
 }
 
 .form__title {
-  margin: 16px 0 25px;
+  margin: 15px 0 25px;
 
   font-family: $default-font;
   color: $black;
@@ -29,7 +33,7 @@
 }
 
 .form__phrase {
-  margin: 0 0 37px;
+  margin: 0 0 38px;
 
   font-family: $default-font;
   color: $black;
@@ -44,7 +48,7 @@
 .form__profile {
   display: flex;
   flex-direction: column;
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   padding: 0;
 
   border: none;
@@ -54,7 +58,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
+  margin-top: 2px;
+  margin-bottom: 15px;
 }
 
 .form__label-common {
@@ -92,6 +97,26 @@
   padding-left: 13px;
 
   appearance: none;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+    border-color: $gray--darkest;
+  }
+
+  &:invalid {
+    color: #ff8282;
+    opacity: 1;
+  }
+}
+
+.form__input-common[placeholder] {
+  color: $gray--darkest;
+  opacity: 1;
 }
 
 .form__wrapper {
@@ -103,14 +128,15 @@
 
 .form__button {
   width: 100%;
-  padding-top: 9px;
-  padding-bottom: 11px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @include font-styles(16px, normal, 20px, center, uppercase);
 }
 
 .form__footnote {
-  margin-top: 17px;
+  margin-top: 22px;
+  margin-left: 7px;
 
   font-family: $phrase_description-font;
   color: $gray--darkest;
@@ -119,9 +145,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form {
-    margin-top: 37px;
-    margin-bottom: 73px;
+  .form__main {
+    margin-top: 40px;
+    margin-bottom: 0;
   }
 
   .form__title-wrapper {
@@ -129,7 +155,7 @@
   }
 
   .form__container {
-    width: 631px;
+    width: 625px;
   }
 
   .form__title-common {
@@ -145,7 +171,7 @@
 
   .form__phrase {
     width: 50%;
-    margin-bottom: 62px;
+    margin-bottom: 60px;
     padding-left: 40px;
 
     @include font-styles(20px, normal, 30px, left, uppercase);
@@ -184,9 +210,9 @@
   }
 
   .form__profile-input {
-    padding-top: 14px;
-    padding-bottom: 16px;
-    padding-left: 19px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 15px;
   }
 
   .form__wrapper {
@@ -218,11 +244,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form {
+  .form__main {
     display: flex;
     flex-wrap: wrap;
     margin-top: 74px;
-    margin-bottom: 81px;
+    margin-bottom: 12px;
   }
 
   .form__title-wrapper {
@@ -246,18 +272,14 @@
     padding-bottom: 15px;
   }
 
-  .form__profile-grid {
-    margin-bottom: 20px;
-  }
-
   .form__phrase {
     width: 56%;
     padding-left: 0;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   .form__field {
-    width: 1220px;
+    width: 1218px;
     margin: 0 auto;
     padding: 0;
 
@@ -280,7 +302,7 @@
 
   .form__wrapper {
     width: 46.5%;
-    margin: 0 0 70px;
+    margin: 0 0 66px;
   }
 
   .form-field__container {

@@ -1,5 +1,5 @@
 .form-addon {
-  margin: 0 0 18px;
+  margin: 0 0 15px;
   padding: 0;
 
   border: none;
@@ -8,7 +8,7 @@
 .form-addon__title {
   position: relative;
 
-  margin-bottom: 39px;
+  margin-bottom: 40px;
   padding: 0;
 
   &::after {
@@ -27,7 +27,7 @@
 .form-addon__label {
   position: relative;
 
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   margin-left: 46px;
 
   cursor: pointer;
@@ -44,6 +44,14 @@
     height: 29px;
 
     border: 1px solid $gray--form-border;
+  }
+
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -67,7 +75,7 @@
 
 @media (min-width: $tablet-width) {
   .form-addon {
-    margin-bottom: 11px;
+    margin-bottom: 13px;
   }
 
   .form-addon__title {
@@ -77,9 +85,9 @@
       content: "";
       position: absolute;
       top: 23px;
-      left: -69px;
+      left: -673px;
 
-      width: 30px;
+      width: 300%;
       height: 3px;
 
       background-color: $green;
@@ -87,9 +95,9 @@
 
     &::after {
       top: 23px;
-      right: -488px;
+      right: -520%;
 
-      width: 445px;
+      width: 500%;
     }
   }
 
@@ -137,9 +145,9 @@
       content: "";
       position: absolute;
       top: 23px;
-      left: -110px;
+      left: -674px;
 
-      width: 70px;
+      width: 300%;
       height: 3px;
 
       background-color: $green;
@@ -149,7 +157,7 @@
       top: 23px;
       right: -1119px;
 
-      width: 1078px;
+      width: 800%;
     }
   }
 

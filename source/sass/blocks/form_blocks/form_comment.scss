@@ -1,5 +1,5 @@
 .form-comment {
-  margin: 0 0 28px;
+  margin: 0 0 26px;
   padding: 0;
 
   border: none;
@@ -42,7 +42,7 @@
 
 @media (min-width: $tablet-width) {
   .form-comment {
-    margin-bottom: 64px;
+    margin-bottom: 63px;
   }
 
   .form-comment__title {
@@ -52,9 +52,9 @@
       content: "";
       position: absolute;
       top: 22px;
-      left: -69px;
+      right: 220px;
 
-      width: 30px;
+      width: 300%;
       height: 3px;
 
       background-color: $green;
@@ -62,9 +62,9 @@
 
     &::after {
       top: 22px;
-      right: -519px;
+      right: -521%;
 
-      width: 479px;
+      width: 500%;
     }
   }
 
@@ -80,7 +80,7 @@
 
 @media (min-width: $desktop-width) {
   .form-comment {
-    margin-bottom: 66px;
+    margin-bottom: 65px;
   }
 
   .form-comment__title {
@@ -88,9 +88,8 @@
       content: "";
       position: absolute;
       top: 22px;
-      left: -110px;
 
-      width: 70px;
+      width: 300%;
       height: 3px;
 
       background-color: $green;
@@ -98,9 +97,9 @@
 
     &::after {
       top: 22px;
-      right: -1150px;
+      right: -1488px;
 
-      width: 1112px;
+      width: 800%;
     }
   }
 
