@@ -101,18 +101,22 @@
   padding-left: 13px;
 
   appearance: none;
-  opacity: 0.5;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 1;
   }
 
-  &:active {
+  &:valid {
     opacity: 1;
     border-color: $gray--darkest;
   }
 
-  &:invalid {
+  &:valid:focus {
+    color: #68b738;
+    opacity: 1;
+  }
+
+  &:invalid:focus {
     color: #ff8282;
     opacity: 1;
   }
