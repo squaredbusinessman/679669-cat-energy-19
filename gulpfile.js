@@ -77,7 +77,11 @@ gulp.task("sprite", function () {
 
 gulp.task("jsmin", function() {
   return pipeline(
-    gulp.src("source/js/*.js"),
+    gulp.src(
+      "source/js/map.js",
+      "source/js/mobile-nav-menu.js",
+      "source/living-example-compare.js"
+      ),
     uglify(),
     rename({ suffix: '.min' }),
     gulp.dest("build/js")
