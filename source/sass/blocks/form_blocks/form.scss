@@ -63,9 +63,6 @@
 }
 
 .form__label-common {
-  display: flex;
-  align-items: center;
-
   color: $black--lighter;
 
   @include font-styles(16px, normal, 18px, left, uppercase);
