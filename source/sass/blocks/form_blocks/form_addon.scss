@@ -24,6 +24,15 @@
   }
 }
 
+.form-addon__grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-addon__grid-element {
+  display: flex;
+}
+
 .form-addon__label {
   position: relative;
 
@@ -104,17 +113,23 @@
   .form-addon__grid {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
   }
 
-  .form-addon__label {
-    width: 35%;
-    margin-bottom: 52px;
-    margin-left: 59px;
+  .form-addon__grid-element {
+    &:nth-child(odd) {
+      width: 54.5%;
+    }
 
     &:nth-child(even) {
-      margin-right: 6px;
+      width: 45.5%;
     }
+  }
+
+  .form-addon__label {
+    margin-bottom: 52px;
+    margin-left: 59px;
 
     &::before {
       content: "";
@@ -161,11 +176,13 @@
     }
   }
 
-  .form-addon__label {
-    width: 15%;
+  .form-addon__grid-element {
+    &:nth-child(odd) {
+      width: 20%;
+    }
 
     &:nth-child(even) {
-      margin-right: 3px;
+      width: 20%;
     }
   }
 }
