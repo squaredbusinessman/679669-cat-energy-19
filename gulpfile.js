@@ -28,6 +28,7 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
+    "source/css/**",
     "source/*.ico"
   ], {
     base: "source"
@@ -76,16 +77,14 @@ gulp.task("sprite", function () {
 });
 
 gulp.task("jsmin", function() {
-  return pipeline(
-    gulp.src(
+  return gulp.src([
       "source/js/map.js",
       "source/js/mobile-nav-menu.js",
-      "source/living-example-compare.js"
-      ),
-    uglify(),
-    rename({ suffix: '.min' }),
-    gulp.dest("build/js")
-  );
+      "source/js/living-example.js"
+      ])
+    .pipe(uglify())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("html", function () {

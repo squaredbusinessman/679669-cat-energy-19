@@ -100,19 +100,13 @@
 
   @include font-styles(16px, normal, 16px, left, uppercase);
 
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active:focus {
-    opacity: 0.3;
-  }
-
   &::after {
     content: "";
     position: absolute;
-    top: 22px;
+    top: 60%;
     left: 96px;
+
+    z-index: 1;
 
     width: 25px;
     height: 12px;
@@ -120,6 +114,24 @@
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+
+    &::after {
+      width: 34px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
+  }
+
+  &:active:focus {
+    opacity: 0.3;
+
+    &::after {
+      width: 34px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
   }
 }
 
@@ -208,6 +220,20 @@
       top: 24px;
       left: 130px;
     }
+
+    &:hover {
+      &::after {
+        top: 22px;
+      }
+      opacity: 0.8;
+    }
+
+    &:active:focus {
+      &::after {
+        top: 22px;
+      }
+      opacity: 0.3;
+    }
   }
 
   .advantages__item--weight-loss > .advantages__link {
@@ -218,6 +244,7 @@
 
   .advantages__item--weight-gain > .advantages__link {
     &::after {
+      top: 23px;
       left: 125px;
     }
   }
@@ -298,7 +325,6 @@
     &::after {
       top: -7px;
       left: -179px;
-
       width: 134px;
       height: 57px;
     }

@@ -27,6 +27,7 @@
 .show-all__wrapper {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .show-all__title {
@@ -57,73 +58,57 @@
 
 @media (min-width: $tablet-width) {
   .show-all {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
 
     &::before {
-      top: 42.5%;
+      top: 39.4%;
       left: 41%;
-      width: 60px;
+      width: 62px;
     }
 
     &::after {
-      top: 37.5%;
+      top: 34%;
       width: 3px;
-      height: 56px;
+      height: 60px;
     }
   }
 
-  .show-all__background {
-    position: absolute;
-    z-index: -1;
 
-    top: 25.5%;
-    left: 0;
-
-    width: 320px;
-    height: 430px;
+  .show-all__wrapper {
+    width: 100%;
+    margin-top: 42.5%;
+    align-items: center;
 
     border: 2px solid $gray--lightest;
   }
 
-  .show-all__wrapper {
-    width: 103%;
-    margin-top: 48.5%;
-    align-items: flex-end;
-  }
-
   .show-all__title {
     width: 50%;
-    padding: 147px 0 0;
+    margin-top: 84px;
 
     @include font-styles(20px, normal, 20px, center, uppercase);
 
     &::before {
-      top: -93px;
+      top: -80px;
       left: 50px;
 
       width: 61px;
       height: 61px;
-
-      background-image: url("../img/icon-plus-tablet.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
     }
   }
 
   .show-all__phrase {
     width: 60%;
-    margin: 26px auto 0;
+    margin-top: 28px;
 
     @include font-styles(16px, normal, 19px, center, none);
   }
 
   .show-all__button {
-    margin: 86px auto 0;
-    padding-bottom: 7px;
+    margin: 64px auto 34px;
 
     width: 75%;
 
@@ -134,20 +119,15 @@
 @media (min-width: $desktop-width) {
   .show-all {
     &::before {
-      top: 42%;
+      top: 39%;
       left: 38%;
       height: 3px;
     }
   }
 
-  .show-all__background {
-    width: 100%;
-    top: 25.7%;
-  }
-
   .show-all__wrapper {
     width: 97.2%;
-    margin-top: 63%;
+    margin-top: 56%;
     margin-left: 4px;
   }
 
@@ -157,9 +137,11 @@
 
   .show-all__phrase {
     width: 90%;
+    margin-top: 25px;
   }
 
   .show-all__button {
-    min-width: 169px;
+    width: 70%;
+    min-width: 149px;
   }
 }

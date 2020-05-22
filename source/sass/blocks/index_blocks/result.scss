@@ -1,3 +1,68 @@
+
+.result__item {
+  width: 43.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result__total {
+  margin-top: 13px;
+
+  font-family: $default-font;
+  color: $black;
+
+  border: 1px solid $gray--dark;
+  border-radius: 3px;
+
+  @include font-styles(24px, normal, 24px, center, uppercase);
+
+  &--weight {
+    margin-left: 3px;
+    padding: 8px 40px 10px 40px;
+  }
+
+  &--days {
+    padding: 8px 20px 10px 20px;
+  }
+}
+
+.result__phrase {
+  @include indent-reset;
+  margin-top: -6px;
+
+  width: 67%;
+  font-family: $phrase_description-font;
+  color: $gray--darkest;
+
+  background-color: $gray--lightest;
+
+  @include font-styles(12px, normal, 12px, center, none);
+  transform: translate(0%, 60%);
+}
+
+.result__total-costs {
+  width: 67%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:first-child {
+    font-family: $default-font;
+    color: $black;
+
+    @include font-styles(14px, normal, 20px, center, uppercase);
+  }
+
+  &:last-child {
+    font-family: $default-font;
+    color: $black;
+
+    @include font-styles(14px, normal, 20px, center, uppercase);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .result {
     @include list-reset;
@@ -15,18 +80,16 @@
     font-family: $default-font;
     color: $black;
 
-    border: 1px solid $gray--dark;
-    border-radius: 3px;
-
     @include font-styles(30px, normal, 37px, center, uppercase);
-  }
 
-  .result__total--weight {
-    padding: 10px 57px 15px 55px;
-  }
+    &--weight {
+      margin-left: 0;
+      padding: 11px 56px 15px;
+    }
 
-  .result__total--days {
-    padding: 10px 29px 15px 29px;
+    &--days {
+      padding: 11px 29px 14px;
+    }
   }
 
   .result__phrase {
@@ -46,13 +109,14 @@
     flex-direction: column;
     width: 25%;
     margin-right: 0;
-
-    @include font-styles(20px, normal, 20px, right, uppercase);
   }
 
   .result__total-costs span {
     display: block;
+    margin-left: auto;
     margin-bottom: 10px;
+
+    @include font-styles(20px, normal, 20px, right, uppercase);
   }
 }
 
@@ -64,17 +128,18 @@
 
   .result__phrase {
     background-color: $gray--lightest;
-    transform: translate(0%, 80%);
+    transform: translate(0%, 97%);
   }
 
   .result__total-costs {
     flex-direction: row;
-    width: 100%;
+    width: 74.5%;
+    margin-right: auto;
+    margin-left: 0;
     padding: 0;
   }
 
   .result__total-costs span {
-
-    margin-right: 64px;
+    margin-left: 0;
   }
 }

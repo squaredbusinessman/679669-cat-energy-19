@@ -1,8 +1,8 @@
-.form-owner__container {
+.form-owner {
   @include center-container;
 }
 
-.form-owner {
+.form-owner__fieldset {
   margin: 28px 0 15px;
   padding: 0;
 
@@ -21,7 +21,7 @@
     top: 29%;
     left: 106%;
 
-    width: 99px;
+    width: 300%;
     height: 3px;
 
     background-color: $green;
@@ -87,12 +87,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form-owner__container {
+  .form-owner {
     width: 630px;
     margin-bottom: 71px;
   }
 
-  .form-owner {
+  .form-owner__fieldset {
     margin-top: 75px;
     margin-bottom: 51px;
   }
@@ -157,12 +157,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form-owner__container {
+  .form-owner {
     width: 1220px;
     padding: 0;
   }
 
-  .form-owner {
+  .form-owner__fieldset {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

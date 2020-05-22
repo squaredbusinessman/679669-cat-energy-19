@@ -1,4 +1,12 @@
+.slider {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
+  .slider {
+    display: block;
+  }
+
   .slider__grid {
     position: relative;
     width: 100%;
@@ -71,7 +79,7 @@
   .slider__img {
     position: absolute;
     display: block;
-    max-width: unset;
+    max-width: none;
     width: 690px;
     height: 517px;
 
@@ -165,18 +173,22 @@
 }
 
 @media (min-width: $desktop-width) {
+  .slider {
+    width: 53.5%;
+  }
+
   .slider__grid {
     margin-top: 0;
   }
 
   .slider__list {
-    min-height: 653px;
+    min-height: 650px;
   }
 
   .slider__item {
     &-upper-slide {
       right: 46%;
-      background-image: linear-gradient($white 190px, $gray--lightest 170px, $gray--lightest 632px);
+      background-image: linear-gradient($white 188px, $gray--lightest 170px, $gray--lightest 632px);
 
       &::before {
         display: none;
@@ -184,7 +196,7 @@
     }
 
     &-lower-slide {
-      background-image: linear-gradient($white 190px, $gray--bg-slider 170px, $gray--bg-slider 632px);
+      background-image: linear-gradient($white 188px, $gray--bg-slider 170px, $gray--bg-slider 632px);
 
       &::after {
         display: none;
