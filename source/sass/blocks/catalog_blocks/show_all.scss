@@ -29,6 +29,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding-top: 28.3%;
+  padding-bottom: 9%;
 }
 
 .show-all__title {
@@ -51,7 +52,6 @@
 
 .show-all__button {
   width: 100%;
-  margin-bottom: 24px;
   padding-top: 11px;
   padding-bottom: 11px;
 }
@@ -81,6 +81,7 @@
     width: 100%;
     margin-top: 42.5%;
     padding-top: 50%;
+    padding-bottom: 11%;
     align-items: center;
 
     border: 2px solid $gray--lightest;
@@ -108,8 +109,7 @@
   }
 
   .show-all__button {
-    margin: 64px auto 34px;
-
+    margin-top: 64px;
     width: 75%;
 
     @include font-styles(16px, normal, 20px, center, uppercase);
@@ -129,6 +129,8 @@
     width: 97.2%;
     margin-top: 56%;
     margin-left: 4px;
+    padding-top: 66%;
+    padding-bottom: 15%;
   }
 
   .show-all__title {
