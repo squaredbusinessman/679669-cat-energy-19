@@ -28,11 +28,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding-top: 28.3%;
 }
 
 .show-all__title {
   margin: 0 auto;
-  padding-top: 79px;
 
   color: $title-clr;
 
@@ -80,6 +80,7 @@
   .show-all__wrapper {
     width: 100%;
     margin-top: 42.5%;
+    padding-top: 50%;
     align-items: center;
 
     border: 2px solid $gray--lightest;
@@ -87,7 +88,6 @@
 
   .show-all__title {
     width: 50%;
-    margin-top: 84px;
 
     @include font-styles(20px, normal, 20px, center, uppercase);
 

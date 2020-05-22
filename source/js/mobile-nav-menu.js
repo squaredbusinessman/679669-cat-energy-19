@@ -1,4 +1,5 @@
 'use strict';
+
 var navMain = document.querySelector('.main-nav');
 var navBurger = document.querySelector('.main-nav__burger');
 
