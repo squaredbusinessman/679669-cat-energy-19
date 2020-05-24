@@ -2,10 +2,6 @@
   padding-bottom: 22px;
 }
 
-.card__background {
-  display: none;
-}
-
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -74,21 +70,20 @@
     min-height: 530px;
     padding-bottom: 40px;
     display: flex;
-  }
 
-  .card__background {
-    display: block;
-    position: absolute;
-    content: "";
-    z-index: -1;
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: -1;
 
-    width: 100%;
-    height: 431px;
+      width: 100%;
+      height: 100%;
 
-    top: 24%;
-    left: 0;
+      top: 0;
+      left: 0;
 
-    background-color: $gray--lightest;
+      background-image: linear-gradient($white 24.4%, $gray--lightest 24.4%, $gray--lightest 76%);
+    }
   }
 
   .card__wrapper {
@@ -145,10 +140,6 @@
 @media (min-width: $desktop-width) {
   .card {
     padding-bottom: 43px;
-  }
-
-  .card__background {
-    top: 24%;
   }
 
   .card__wrapper {
